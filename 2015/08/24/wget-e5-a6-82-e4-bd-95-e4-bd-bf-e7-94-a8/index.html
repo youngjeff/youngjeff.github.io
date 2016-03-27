@@ -1,0 +1,859 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="wget," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="学习wget
+GNU Wget is a free utility for non-interactive download of files from the Web. It supportsHTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+
+Wget is non-interactive, me">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wget 如何使用">
+<meta property="og:url" content="youngjeff.github.io/2015/08/24/wget-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8/index.html">
+<meta property="og:site_name" content="jefflee 的学习笔记">
+<meta property="og:description" content="学习wget
+GNU Wget is a free utility for non-interactive download of files from the Web. It supportsHTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+
+Wget is non-interactive, me">
+<meta property="og:updated_time" content="2015-11-23T04:19:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wget 如何使用">
+<meta name="twitter:description" content="学习wget
+GNU Wget is a free utility for non-interactive download of files from the Web. It supportsHTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+
+Wget is non-interactive, me">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> wget 如何使用 | jefflee 的学习笔记 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?DH6lV8m4rycWFT0g";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">jefflee 的学习笔记</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">改变从未停止</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                wget 如何使用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-08-24T10:00:22+08:00" content="2015-08-24">
+              2015-08-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/linux的学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">linux的学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="学习wget"><a href="#学习wget" class="headerlink" title="学习wget"></a>学习wget</h2><ul>
+<li>GNU Wget is a free utility for non-interactive download of files from the Web. It supports<br>HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.</li>
+</ul>
+<p>Wget is non-interactive, meaning that it can work in the background, while the user is not<br>logged on. This allows you to start a retrieval and disconnect from the system, letting Wget<br>finish the work. By contrast, most of the Web browsers require constant user’s presence,<br>which can be a great hindrance when transferring a lot of data.<br><a id="more"></a><br>Wget can follow links in HTML, XHTML, and CSS pages, to create local versions of remote web<br>sites, fully recreating the directory structure of the original site. This is sometimes<br>referred to as “recursive downloading.” While doing that, Wget respects the Robot Exclusion<br>Standard (/robots.txt). Wget can be instructed to convert the links in downloaded files to<br>point at the local files, for offline viewing.</p>
+<p>Wget has been designed for robustness over slow or unstable network connections; if a download<br>fails due to a network problem, it will keep retrying until the whole file has been retrieved.<br>If the server supports regetting, it will instruct the server to continue the download from<br>where it left off.</p>
+<ul>
+<li>断点续传。 当文件特别大或者网络特别慢的时候,往往一个文件还没有下载完,连接就已经被切断,此 时就需要断点续传。wget的断点续传是自动的,只需要使用-c参数,例如:<h3 id="wget的一些命令"><a href="#wget的一些命令" class="headerlink" title="wget的一些命令"></a>wget的一些命令</h3>wget -c</li>
+</ul>
+<p>使用断点续传要求服务器支持断点续传。-t参数表示重试次数,例如需要重试100次,那么就 写-t 100,如果设成-t 0,那么表示无穷次重试,直到连接成功。-T参数表示超时等待时间,例 如-T 120,表示等待120秒连接不上就算超时。</p>
+<ul>
+<li>批量下载。</li>
+</ul>
+<p>如果有多个文件需要下载,那么可以生成一个文件,把每个文件的URL写一行,例如生成文件 download.txt,然后用命令:wget -i download.txt 这样就会把download.txt里面列出的每个URL都下载下来。(如果列的是文件就下载文件,如果列 的是网站,那么下载首页)</p>
+<ul>
+<li>选择性的下载。</li>
+</ul>
+<p>可以指定让wget只下载一类文件,或者不下载什么文件。例如:</p>
+<p>wget -m –reject=gif <a href="http://target.web.site/subdirectory" target="_blank" rel="external">http://target.web.site/subdirectory</a> 表示下载<a href="http://target.web.site/subdirectory,但是忽略gif文件。--accept=LIST" target="_blank" rel="external">http://target.web.site/subdirectory,但是忽略gif文件。--accept=LIST</a> 可以</p>
+<p>接受的文件类型,–reject=LIST拒绝接受的文件类型。</p>
+<ul>
+<li>密码和认证。</li>
+</ul>
+<p>wget只能处理利用用户名/密码方式限制访问的网站,可以利用两个参数: –http-user=USER设置HTTP用户 –http-passwd=PASS设置HTTP密码 对于需要证书做认证的网站,就只能利用其他下载工具了,例如curl。</p>
+<ul>
+<li>利用代理服务器进行下载。</li>
+</ul>
+<p>如果用户的网络需要经过代理服务器,那么可以让wget通过代理服务器进行文件的下载。此 时需要在当前用户的目录下创建一个.wgetrc文件。文件中可以设置代理服务器:</p>
+<p>http-proxy = 111.111.111.111:8080 ftp-proxy = 111.111.111.111:8080</p>
+<p>分别表示http的代理服务器和ftp的代理服务器。如果代理服务器需要密码则使用:</p>
+<p>–proxy-user=USER设置代理用户</p>
+<p>–proxy-passwd=PASS设置代理密码</p>
+<p>这两个参数。</p>
+<p>###wget的一些参数</p>
+<p>使用参数–proxy=on/off 使用或者关闭代理。 wget还有很多有用的功能,需要用户去挖掘。</p>
+<ul>
+<li>wget的使用格式</li>
+<li>Usage: wget [OPTION]… [URL]…</li>
+<li>用wget做站点镜像:</li>
+</ul>
+<p>wget -r -p -np -k <a href="http://dsec.pku.edu.cn/~usr_name/" target="_blank" rel="external">http://dsec.pku.edu.cn/~usr_name/</a></p>
+<p>或者</p>
+<p>wget -m <a href="http://dsec.pku.edu.cn/~usr_name/" target="_blank" rel="external">http://dsec.pku.edu.cn/~usr_name/</a></p>
+<p>wget –mirror –w 2 –p –HTML-extension –-convert-links – P ~\wget_files\example1 <a href="http://www.yourdomain.com" target="_blank" rel="external">http://www.yourdomain.com</a></p>
+<p>–mirror(-m):指定要做镜像的网站。wget会获取网站的所有链接和相关的文件。如果 本地镜像存在,还会自动覆盖最近的更新。</p>
+<p>-w:告诉wget每个请求的间隔时间,这里是2秒。这个不是必需的,当有些站点对请求 间隔有限制时,这个参数就非常有用了。</p>
+<p>-p:让wget获取页面上的所有元素,使其能在本地浏览。–mirror参数并不会保证所有的 图片及相关文件都被下载,所以需要加上-p来指定。</p>
+<p>–HTML-extension:将所有不是html扩展名的文件都转换成.html。这个参数会 把CGI,ASP,PHP等结尾的文件都转换成html结尾。</p>
+<p>-P(prefix folder):指定目标文件夹。</p>
+<ul>
+<li>在不稳定的网络上下载一个部分下载的文件,以及在空闲时段下载 wget -t 0 -w 31 -c <a href="http://dsec.pku.edu.cn/BBC.avi" target="_blank" rel="external">http://dsec.pku.edu.cn/BBC.avi</a> -o down.log &amp;</li>
+</ul>
+<p>或者从filelist读入要下载的文件列表</p>
+<p>wget -t 0 -w 31 -c -B ftp://dsec.pku.edu.cn/linuxsoft -i filelist.txt -o down.log &amp;</p>
+<p>上面的代码还可以用来在网络比较空闲的时段进行下载。我的用法是:在mozilla中将不方便当时 下载的URL链接拷贝到内存中然后粘贴到文件filelist.txt中,在晚上要出去系统前执行上面代码 的第二条。</p>
+<ul>
+<li>使用代理下载</li>
+</ul>
+<p>wget -Y on -p -k <a href="https://sourceforge.net/projects/wvware/" target="_blank" rel="external">https://sourceforge.net/projects/wvware/</a></p>
+<p>代理可以在环境变量或wgetrc文件中设定</p>
+<p>在环境变量中设定代理</p>
+<p>export PROXY=<a href="http://211.90.168.94:8080/" target="_blank" rel="external">http://211.90.168.94:8080/</a> # 在~/.wgetrc中设定代理</p>
+<p>http_proxy =</p>
+<p>ftp_proxy = <a href="http://proxy.yoyodyne.com:18023/" target="_blank" rel="external">http://proxy.yoyodyne.com:18023/</a></p>
+<ul>
+<li>wget各种选项分类列表 * 启动</li>
+<li><span style="font-size: 12px;"> </span></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/wget/" rel="tag">#wget</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/22/e5-af-b9-e4-ba-8e-e5-85-a8-e6-a0-88-e5-b7-a5-e7-a8-8b-e5-b8-88-e7-9a-84-e7-90-86-e8-a7-a3/" rel="next" title="对于全栈工程师的理解">
+                <i class="fa fa-chevron-left"></i> 对于全栈工程师的理解
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/08/25/e6-ac-a2-e8-bf-8e-e6-9d-a5fedora-e4-b8-ad-e6-96-87-e7-a4-be-e5-8c-ba-e9-80-9b-e9-80-9b/" rel="prev" title="欢迎来fedora中文社区逛逛">
+                欢迎来fedora中文社区逛逛 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/favicon.ico"
+               alt="jeff" />
+          <p class="site-author-name" itemprop="name">jeff</p>
+          <p class="site-description motion-element" itemprop="description">jefflee成长笔记</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">94</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/youngjeff" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#学习wget"><span class="nav-number">1.</span> <span class="nav-text">学习wget</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#wget的一些命令"><span class="nav-number">1.1.</span> <span class="nav-text">wget的一些命令</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jeff</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

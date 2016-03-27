@@ -1,0 +1,806 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, jeff" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="1OpenStack是什么？如果你是当今的IT技术人员，你说自己不知道OpenStack，保不准有人会在暗地里偷笑你。OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。
+OpenStack不是一个软件，而是一个云平台管理的项目，它由几个主要的组件组合起来完成一些具体的工作。
+&amp;nbsp;
+22011年，OpenS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="openstack 初识">
+<meta property="og:url" content="youngjeff.github.io/2015/08/21/openstack-e5-88-9d-e8-af-86/index.html">
+<meta property="og:site_name" content="jefflee 的学习笔记">
+<meta property="og:description" content="1OpenStack是什么？如果你是当今的IT技术人员，你说自己不知道OpenStack，保不准有人会在暗地里偷笑你。OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。
+OpenStack不是一个软件，而是一个云平台管理的项目，它由几个主要的组件组合起来完成一些具体的工作。
+&amp;nbsp;
+22011年，OpenS">
+<meta property="og:updated_time" content="2015-11-23T04:19:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="openstack 初识">
+<meta name="twitter:description" content="1OpenStack是什么？如果你是当今的IT技术人员，你说自己不知道OpenStack，保不准有人会在暗地里偷笑你。OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。
+OpenStack不是一个软件，而是一个云平台管理的项目，它由几个主要的组件组合起来完成一些具体的工作。
+&amp;nbsp;
+22011年，OpenS">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> openstack 初识 | jefflee 的学习笔记 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?DH6lV8m4rycWFT0g";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">jefflee 的学习笔记</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">改变从未停止</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                openstack 初识
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-08-21T14:24:28+08:00" content="2015-08-21">
+              2015-08-21
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/linux的学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">linux的学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>OpenStack是什么？如果你是当今的IT技术人员，你说自己不知道OpenStack，保不准有人会在暗地里偷笑你。OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。</p>
+<p>OpenStack不是一个软件，而是一个云平台管理的项目，它由几个主要的组件组合起来完成一些具体的工作。</p>
+<p>&nbsp;</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>2011年，OpenStack采用的调查报告中显示：73%的被调查者认为OpenStack部署由节约成本和害怕厂家锁定所驱动。<br><a id="more"></a><br>OpenStack在过去几年的增长迅速，并有了巨大的影响力，将继续支持OpenStack项目，目标是提供客户完整的监控与分析解决方案。很多人会有疑惑，为什么OpenStack会这么火？</p>
+<p>OpenStack Compute (Nova)是一套控制器，用于为单个用户或使用群组启动虚拟机实例。它同样能够用于为包含着多个实例的特定项目设置网络。OpenStack Compute在公共云处理方面堪与Amazon EC2相提并论；而在私有云方面也毫不逊色于VMware的产品。在公共云中，这套管理机制将提供预制的镜像或是为用户创建的镜像提供存储机制，这样用户就能够将镜像以虚拟机的形式启动。</p>
+<p>OpenStack 对象存储(Swift)是一套用于在大规模可扩展系统中通过内置冗余及容错机制实现对象存储的系统。这些对象能够通过一个REST API或是像Cyberduck这样可以对接对象存储API的客户端加以恢复。</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>OpenStack镜像服务 (Glance)是一套虚拟机镜像查找及检索系统。它能够以三种形式加以配置：利用OpenStack对象存储机制来存储镜像；利用Amazon的简单存储解决方案（简称S3）直接存储信息；或者将S3存储与对象存储结合起来，作为S3访问的连接器。OpenStack镜像服务支持多种虚拟机镜像格式，包括VMware（VMDK）、Amazon镜像（AKI、ARI、AMI）以及VirtualBox所支持的各种磁盘格式。镜像元数据的容器格式包括Amazon的AKI、ARI以及AMI信息，标准OVF格式以及二进制大型数据。</p>
+<p>OpenStack是一个旨在为公共及私有云的建设与管理提供软件的开源项目。目前，OpenStack的社区拥有超过130家企业及1350位开发者，这些机构与个人都将OpenStack作为基础设施即服务（简称IaaS）资源的通用前端。OpenStack项目的首要任务是简化云的部署过程并为其带来良好的可扩展性。</p>
+<p>OpenStack是以Python编程语言编写的，整合Tornado网页服务器、Nebula运算平台，使用Twisted软件框架。在标准上，OpenStack　　遵循Open Virtualization Format、AMQP、SQLAlchemy等标准。虚拟机器软件支援包括：KVM、Xen、VirtualBox 、QEMU、 LXC等。</p>
+<p>OpenStack包含两个主要模块：Nova和Swift，前者是NASA开发的虚拟服务器部署和业务计算模块；后者是 Rackspack开发的分布式云存储模块，两者可以一起用，也可以分开单独用。OpenStack是开源项目，除了有 Rackspace和NASA的大力支持外，后面还有包括 Dell、Citrix、 Cisco、 Canonical这些重量级公司的贡献和支持，发展速度非常快，有取代另一个业界领先开源云平台 Eucalyptus 的态势。</p>
+<p>很多人都好奇的询问，说了这么多Openstack功能和结构，以及项目名称。你能总结一下Openstack的优势到底在哪里吗？</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>可以，有媒体为Openstack做了一个优势的总结。</p>
+<p>首先，第一个是控制性。开源的平台意味着不会被某个特定的厂商绑定和限制，而且模块化的设计能把遗留的和第三方的技术进行集成，从而来满足自身业务需要。OpenStack项目所提供的云计算，让IT团队可以成为自己的云计算服务厂商，虽然构建和维护一个开源私有云计算并不适合每一家公司；但是如果拥有基础设施和开发人员，OpenStack将是很好的选择。</p>
+<p>其次是兼容性。OpenStack公共云的兼容性可以使企业在将来很容易的将数据和应用迁移到基于安全策略的、经济的和其他关键商业标准的公共云中。使用亚马逊网络服务及其他云服务的企业，抱怨最多的就是“用户被绑架，无法轻易转移数据”。在云计算社区，有一个流行的概念，即数据是有重量的，一旦将数据存在某个云计算提供商那里，它就变得繁重而难以迁移，作为企业最重要的资源，如果在迁移的过程中不能保护好数据安全，很有可能会给企业带来灭顶之灾，相信没有公司愿意承担这个风险。</p>
+<p>第三是可扩展性。目前，主流的Linux操作系统，包括Fedora、SUSE等都将支持OpenStack。OpenStack在大规模部署公有云时，在可扩展性上有优势，而且也可用于私有云，一些企业特性也在逐步完善中。随着Ubuntu 12.04 LTS正式全面将Eucalyptus替换成OpenStack，OpenStack将超过Eucalyptus成为云平台基础的第一选择。</p>
+<p>第四是灵活性。灵活性是OpenStack最大的优点之一，用户可以根据自己的需要建立基础设施，也可以轻松地为自己的集群增加规模。主要用Python编写的OpenStack代码质量相当高，很容易遵循，带有一个完全文档的API，用户可以使用JSON或者XML消息格式的不同组件的代码，这相当有利于项目的发展壮大。此外，OpenStack项目的代码将在极为宽松自由的Apache 2许可下发布，这意味着任何第三方都可以重新发布这些代码，在其基础上开发私有软件并按照新的许可发布，给众多的云计算企业，留下了的更大的发展空间。</p>
+<p>第五是行业标准。来自全球十多个国家的60多家领军企业，包括Cisco、Dell、Intel以及微软都参与到了OpenStack的项目中，并且在全球使用OpenStack技术的云平台在不断的上线。云计算领军企业的加入，会无形透露出一个信息，就是OpenStack未来可能会成为一个行业标准，而且OpenStack项目研发的初衷就是制定一套开源软件标准。</p>
+<p>第六是实践检验。实践是检验真理的唯一标准，OpenStack的云操作系统，已被全球正在运营的大型公有云和私有云技术所验证过，比如，Dell公司已经推出了OpenStack安装程序Crowbar，不仅如此，OpenStack在中国的发展趋势也是非常之好，包括物联网用户、国内高校以及部分大小企业，都开始利用OpenStack建立云计算环境，整合企业架构以及治理公司内部的IT基础架构。</p>
+<h3 id="4-1"><a href="#4-1" class="headerlink" title="4"></a>4</h3><p>小结：在RackSpace宣布推出开源云计算平台OpenStack后，曾经震动了业界。在2010年的10月，微软表示将推动Windows Server 2008 R2和OpenStack的整合。之后不久，思科也宣布加入OpenStack，着重于OpenStack的网络功能并推出了新的NaaS服务(Network as a Service)。2011年7月底，Dell推出了第一套支持OpenStack架构的解决方案，开发了一个OpenStack安装程序Crowbar，可供企业使用Power Edge C服务器来建设一个OpenStack环境。随后HP云服务副总经理Emil Sayegh也在官方BBS上宣布加入OpenStack计划，除了提供赞助外，HP云端开发团队也将参与OpenStack计划的开发。</p>
+<p>随着云计算创新的步伐不断加快，新一代的技术和成果也在快速增长。但是云计算市场的分散性导致客户难以选择云计算厂商和合作伙伴，一旦做错决定将不得不转移到新的云上进行重新构建。这对于一些大的公司来说，确实是一个挑战。 鉴于上述原因，云需要一个开源的操作系统，开源云可以避免被锁的问题，而OpenStack就是这样一个开源的云操作系统，RakSpace CTO John Engates更将OpenStack的发展比作Linux和MySQL。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/21/e4-b8-ba-e4-bd-95linux-e7-b3-bb-e7-bb-9f-e6-b2-a1-e6-9c-89-e7-a3-81-e7-9b-98-e7-a3-81-e7-89-87/" rel="next" title="为何linux系统没有磁盘磁片,和选择ssd的优点.">
+                <i class="fa fa-chevron-left"></i> 为何linux系统没有磁盘磁片,和选择ssd的优点.
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/08/22/e5-88-86-e5-8c-ba-e7-9a-84-e6-a6-82-e5-bf-b5/" rel="prev" title="分区的概念">
+                分区的概念 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/favicon.ico"
+               alt="jeff" />
+          <p class="site-author-name" itemprop="name">jeff</p>
+          <p class="site-description motion-element" itemprop="description">jefflee成长笔记</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">94</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/youngjeff" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">3.</span> <span class="nav-text">3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">4.</span> <span class="nav-text">4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1"><span class="nav-number">5.</span> <span class="nav-text">4</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jeff</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

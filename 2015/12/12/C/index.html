@@ -1,0 +1,812 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="C#," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="前言这本书我看了一周就看完了，内容很详实，涉及到C#2.0的方方面面，是初学者的不错的教材，里面每一节的讲解都有范例代码，我们在看书的同时把代码都自己写一遍，会加深影响，便于自己的学习。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="推荐书-C#范例精要解析">
+<meta property="og:url" content="youngjeff.github.io/2015/12/12/C/index.html">
+<meta property="og:site_name" content="jefflee 的学习笔记">
+<meta property="og:description" content="前言这本书我看了一周就看完了，内容很详实，涉及到C#2.0的方方面面，是初学者的不错的教材，里面每一节的讲解都有范例代码，我们在看书的同时把代码都自己写一遍，会加深影响，便于自己的学习。">
+<meta property="og:updated_time" content="2015-12-12T12:10:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="推荐书-C#范例精要解析">
+<meta name="twitter:description" content="前言这本书我看了一周就看完了，内容很详实，涉及到C#2.0的方方面面，是初学者的不错的教材，里面每一节的讲解都有范例代码，我们在看书的同时把代码都自己写一遍，会加深影响，便于自己的学习。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 推荐书-C#范例精要解析 | jefflee 的学习笔记 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?DH6lV8m4rycWFT0g";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">jefflee 的学习笔记</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">改变从未停止</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                推荐书-C#范例精要解析
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-12T12:22:11+08:00" content="2015-12-12">
+              2015-12-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">读书笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这本书我看了一周就看完了，内容很详实，涉及到C#2.0的方方面面，是初学者的不错的教材，<br>里面每一节的讲解都有范例代码，我们在看书的同时把代码都自己写一遍，会加深影响，<br>便于自己的学习。<br><a id="more"></a></p>
+<h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><h3 id="范例"><a href="#范例" class="headerlink" title="范例"></a>范例</h3><p>本书通过大量的范例，在详细讲解C＃基本语法的基础上，介绍利用C#开发．NET应用程序所需了解的各种技巧，并完整地加入了C#2．O的新增功能，由浅入深，带领读者逐步迈向专业C#程序设计师之路。本书适合想要用C#开发．NET应用程序的读者阅读，也可供大专院校软件专业师生参考。说明：经原作者同意，本书的第24章由清华大学出版社编辑宋延清先生增补创作。其余各章均系原作者的繁体版改写的简体中文版。</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><blockquote>
+<p>提供最完备的C＃学习资料，适合没有任何编程基础的入门级读者；</p>
+</blockquote>
+<p>　&gt;　对200多个工程范例逐行分析、手把手辅导，由浅入深引领，直至学会为止；</p>
+<p>　　&gt;以微软MVP视角深入阐述面向对象编程的精髓，讲解生动，令人跃跃欲试；</p>
+<p>　　&gt;摆脱窗口束缚，利用Console工程领略全套底层类库功能，代码可随意移植；</p>
+<p>　　&gt;用崭新的方式重新梳理可视化编程思想，洞悉事件、代理、绘图机制；</p>
+<p>　　&gt;全面覆盖集合、泛型、线程、数据流、网络、序列化、数据库等高级话题；</p>
+<p>　　&gt;创作和编辑细致入微，配合光盘源代码，使新手、老手都能成为行家里手。</p>
+<p>　　&gt;说明开发.NET应用程序所需了解的C＃编程语言相关技术包含C＃2.0新增功能和VisualC＃2005速成版的介绍和操作说明全部范例均在MicrosoftVisualStudio2005环境中测试通过。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>回顾C#发展的历史，C# 1.0完全是模仿Java，并保留了C/C++的一些特性如struct，新学者很容易上手；C# 2.0加入了泛型，也与Java1.5的泛型如出一辙；C# 3.0加入了一堆语法糖，并在没有修改CLR的情况下引入了Linq，简直是神来之笔，虽然很多项目出于各种各样如性能之类的原因没有采用，但非常适合小型程序的快速开发，减轻了程序员的工作量，也提高了代码的可读性；C# 4.0增加了动态语言的特性，从里面可以看到很多javascript、python这些动态语言的影子。虽然越来越偏离静态语言的道路，但从另一个角度来说，这些特性也都是为了提高程序员的生产力。至于被接受与否，还是让时间来说话吧。</p>
+<h3 id="C-进化之道"><a href="#C-进化之道" class="headerlink" title="C#进化之道"></a>C#进化之道</h3><p>PS：这里面还有一点版本号的小插曲——VS2008所对应的.Net Framework是3.5，C#是3.0，CLR是2.0，及其混乱，MS终于下决心在VS2010中把这三个版本号都统一成了4.0，于是CLR3不知所终……<br>C# 4.0</p>
+<p>  C# 4.0的主要主题是动态编程。对象的意义变得越来越“动态”，它们的结构和行为无法通过静态类型来捕获，或者至少编译器在编译程序时无法得知对象的结构和行为。例如——</p>
+<p>  a. 来自动态编程语言——如Python或Ruby——的对象<br>  b. 通过IDispatch访问的COM对象<br>  c. 通过反射访问的一般.NET类型<br>  d. 结构发生过变化的对象——如HTML DOM对象</p>
+<p>  尽管C#依然是静态类型语言，但我们的目的是改善它与这些对象的交互。</p>
+<p>  另一个次要主题是与Visual Basic协同进步（co-evolution）。将来我们希望仅维护每种语言单独的特征，而重要的新特性会同时引入两种语言。它们的区别仅仅是风格和感觉上的，而不在于特性集方面。</p>
+<p>  C# 4.0中的新特性分为四组——</p>
+<h3 id="动态查找"><a href="#动态查找" class="headerlink" title="动态查找"></a>动态查找</h3><p>  动态查找允许在编写方法、运算符和索引器调用、属性和字段访问甚至对象调用时，绕过C#静态类型检查，而在运行时进行解析。</p>
+<p>  命名参数和可选参数</p>
+<p>  现在C#中的参数可以通过在成员声明中为其提供默认值来指名它是可选的。在调用该成员时，可选参数可以忽略。另外，在传入任何参数时都可以按照参数名而不是位置进行传递。</p>
+<p>  特定于COM的互操作特性</p>
+<p>  动态查找以及命名参数和可选参数都有助于使针对COM的编程不再像今天这样痛苦。在这些特性之上，我们还添加了大量其他小特性，进一步改善了互操作体验。</p>
+<h3 id="变性"><a href="#变性" class="headerlink" title="变性"></a>变性</h3><p>  过去，IEnumerable<string>并不是IEnumerable<object>。现在它是了——C#包含了类型安全的“协变性和逆变性（co-and contravariance）”而且通用的BCL也将利用这一特性进行更新。</object></string></p>
+<h3 id="动态查找-1"><a href="#动态查找-1" class="headerlink" title="动态查找"></a>动态查找</h3><p>  动态查找可以用统一的方式来动态调用成员。有了动态查找，当你拿到一个对象时，不用管它是来自于COM还是IronPython、HTML DOM或是反射；只需要对其进行操作即可，运行时会帮你指出针对特定的对象，这些操作的具体意义。</p>
+<p>  这给你带来了巨大的灵活性，并能极大程度地精简代码，但它伴随着一个巨大的缺点——不会为这些操作维护静态类型。在编译时，会假设动态对象支持任何操作，而如果它不支持某个操作，则只有到运行时才能得到错误。有的时候这不会有任何损失，因为对象根本不具有静态类型，而且他情况下必须在简洁和安全之间进行权衡。为了帮助进行权衡，C#的一个设计目标就是允许在每个单独的调用中选择是否使用动态行为。</p>
+<h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><p>  C# 4.0引入了一个新的静态类型，称为dynamic。当你拥有了一个dynamic类型的对象后，你“对他做的事情”只会在运行时进行解析——</p>
+<h3 id="C-winform"><a href="#C-winform" class="headerlink" title="C# winform"></a>C# winform</h3><p>C#提供了很多控件用于开发应用程序。<br>C#标准控件根据其应用环境分为两类：<br>Windows Form控件：主要用于Windows应用程序的开发。所有的Windows控件都是从Control类中派生来的，该类包含了所有用户界面的Windows Form组件，其中也包括Form类。Control类中包括了很多位所有控件所共享的属性、事件和方法。它包含复选框、文本框、按钮、标签、图像列表等。<br>Web窗体控件：主要用于Web应用程序的开发。它是专门针对Asp .NET Web窗体设计的服务器控件。Web窗体控件包含在命名空间System.Web.UI.WebControls中，当用户使用Visual Studio创建Web窗体页面时，会自动在后台代码文件中添加引用该命名空间的Using语句。<br>.NET Compact Framework 提供了可以满足大多数设备项目需要的Windows Form控件。若要使用这些控件没有的功能，可以从公共控件派生您自己的自定义控件。可以通过定义从 Control 类或从程序集中的现有 UserControl 继承的公共类型创建自定义控件。<br>最简单的控件自定义是重写公共控件的方法。例如，可以重写 TextBox 控件的 OnKeyPress 继承方法，提供将输入限制为数字字符的代码。<br>如若觉得自定义控件过于浪费时间和复杂，<br>也可以从受信任的来源下载控件，并通过添加引用来导入自定义控件。支持这些自定义的.NET的控件有：ComponentOne Studio, Spread，ActiveReports、MultiRow等。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag">#C#</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/11/27/qt-天气通/" rel="next" title="qt-天气通软件">
+                <i class="fa fa-chevron-left"></i> qt-天气通软件
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/13/C-dll/" rel="prev" title="C#dll">
+                C#dll <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/favicon.ico"
+               alt="jeff" />
+          <p class="site-author-name" itemprop="name">jeff</p>
+          <p class="site-description motion-element" itemprop="description">jefflee成长笔记</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">94</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/youngjeff" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/your-user-name" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重点"><span class="nav-number">2.</span> <span class="nav-text">重点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#范例"><span class="nav-number">2.1.</span> <span class="nav-text">范例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特点"><span class="nav-number">2.2.</span> <span class="nav-text">特点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-number">3.</span> <span class="nav-text">后记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-进化之道"><span class="nav-number">3.1.</span> <span class="nav-text">C#进化之道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态查找"><span class="nav-number">3.2.</span> <span class="nav-text">动态查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变性"><span class="nav-number">3.3.</span> <span class="nav-text">变性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态查找-1"><span class="nav-number">3.4.</span> <span class="nav-text">动态查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型"><span class="nav-number">3.5.</span> <span class="nav-text">类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-winform"><span class="nav-number">3.6.</span> <span class="nav-text">C# winform</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jeff</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
