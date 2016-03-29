@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>youngjeff.github.io/2016/03/29/%E2%80%9C%E6%8E%A8%E8%8D%90%E4%B9%A6-debian%E6%A0%87%E5%87%86%E6%95%99%E7%A8%8B%E2%80%9D/</loc>
+    <lastmod>2016-03-29T07:28:31.197Z</lastmod>
+    <data>
+        <display>
+        <title>“推荐书-debian标准教程”</title>
+        <pubTime>2016-03-29T07:18:45.000Z</pubTime>
+        
+        <tag>读书笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书笔记" url="youngjeff.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>youngjeff.github.io/2016/03/27/ffmpeg%E8%A7%A3%E7%A0%81yuv%E6%95%B0%E6%8D%AE/</loc>
     <lastmod>2016-03-27T08:30:20.680Z</lastmod>
     <data>
@@ -581,24 +601,6 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/08/git-e7-9a-84-e7-ae-80-e5-8d-95-e4-bd-bf-e7-94-a8/</loc>
-    <lastmod>2015-11-23T04:19:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>git 的简单使用</title>
-        <pubTime>2015-09-08T08:28:06.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="未分类" url="youngjeff.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>youngjeff.github.io/2015/08/22/dnf-e5-85-a5-e9-97-a8-e6-8c-87-e5-8d-97/</loc>
     <lastmod>2015-11-23T04:19:51.000Z</lastmod>
     <data>
@@ -610,6 +612,24 @@
            
              
               <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>youngjeff.github.io/2015/09/08/git-e7-9a-84-e7-ae-80-e5-8d-95-e4-bd-bf-e7-94-a8/</loc>
+    <lastmod>2015-11-23T04:19:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>git 的简单使用</title>
+        <pubTime>2015-09-08T08:28:06.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="未分类" url="youngjeff.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
           
         </display>
     </data>
@@ -707,12 +727,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/29/fedora-e5-ae-9e-e7-8e-b03d-e6-a1-8c-e9-9d-a2/</loc>
+    <loc>youngjeff.github.io/2015/09/14/fedora-e5-bc-80-e5-90-afssh/</loc>
     <lastmod>2015-11-23T04:19:48.000Z</lastmod>
     <data>
         <display>
-        <title>fedora实现3d桌面</title>
-        <pubTime>2015-09-29T12:05:34.000Z</pubTime>
+        <title>fedora 开启ssh</title>
+        <pubTime>2015-09-14T06:44:13.000Z</pubTime>
         
          
            
@@ -725,12 +745,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/14/fedora-e5-bc-80-e5-90-afssh/</loc>
+    <loc>youngjeff.github.io/2015/09/29/fedora-e5-ae-9e-e7-8e-b03d-e6-a1-8c-e9-9d-a2/</loc>
     <lastmod>2015-11-23T04:19:48.000Z</lastmod>
     <data>
         <display>
-        <title>fedora 开启ssh</title>
-        <pubTime>2015-09-14T06:44:13.000Z</pubTime>
+        <title>fedora实现3d桌面</title>
+        <pubTime>2015-09-29T12:05:34.000Z</pubTime>
         
          
            
@@ -779,24 +799,6 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/03/expect-e8-84-9a-e6-9c-acqt-qprocess-e7-ae-80-e5-8d-95-e4-bd-bf-e7-94-a8/</loc>
-    <lastmod>2015-11-23T04:19:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>expect脚本,qt qprocess简单使用</title>
-        <pubTime>2015-09-03T11:42:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="未分类" url="youngjeff.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>youngjeff.github.io/2015/08/27/fedora-e5-ae-89-e8-a3-85conky/</loc>
     <lastmod>2015-11-23T04:19:46.000Z</lastmod>
     <data>
@@ -815,12 +817,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/e6-b5-8b-e8-af-95-e7-9b-b8-e5-85-b3-e7-9a-84-e7-9f-a5-e8-af-86/</loc>
-    <lastmod>2015-11-23T04:19:45.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/09/03/expect-e8-84-9a-e6-9c-acqt-qprocess-e7-ae-80-e5-8d-95-e4-bd-bf-e7-94-a8/</loc>
+    <lastmod>2015-11-23T04:19:46.000Z</lastmod>
     <data>
         <display>
-        <title>测试相关的知识</title>
-        <pubTime>2015-08-19T02:07:48.000Z</pubTime>
+        <title>expect脚本,qt qprocess简单使用</title>
+        <pubTime>2015-09-03T11:42:50.000Z</pubTime>
         
          
            
@@ -851,12 +853,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/e6-b5-8b-e8-af-95-e7-9a-84-e8-a1-a5-e5-85-85/</loc>
-    <lastmod>2015-11-23T04:19:44.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/08/19/e6-b5-8b-e8-af-95-e7-9b-b8-e5-85-b3-e7-9a-84-e7-9f-a5-e8-af-86/</loc>
+    <lastmod>2015-11-23T04:19:45.000Z</lastmod>
     <data>
         <display>
-        <title>测试的补充</title>
-        <pubTime>2015-08-19T02:08:44.000Z</pubTime>
+        <title>测试相关的知识</title>
+        <pubTime>2015-08-19T02:07:48.000Z</pubTime>
         
          
            
@@ -878,6 +880,24 @@
         
         <tag>fedora</tag>
          
+         
+           
+             
+              <breadCrumb title="未分类" url="youngjeff.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>youngjeff.github.io/2015/08/19/e6-b5-8b-e8-af-95-e7-9a-84-e8-a1-a5-e5-85-85/</loc>
+    <lastmod>2015-11-23T04:19:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>测试的补充</title>
+        <pubTime>2015-08-19T02:08:44.000Z</pubTime>
+        
          
            
              
@@ -925,12 +945,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/10/26/e6-8e-a8-e8-8d-90-e4-b9-a6-headfist-e6-b7-b1-e5-85-a5-e6-b5-85-e5-87-ba/</loc>
+    <loc>youngjeff.github.io/2015/09/21/e6-8e-a8-e8-8d-90-e4-b9-a6-linux-e5-b0-b1-e6-98-af-e8-bf-99-e4-b8-aa-e8-8c-83/</loc>
     <lastmod>2015-11-23T04:19:42.000Z</lastmod>
     <data>
         <display>
-        <title>推荐书-headfist(深入浅出)</title>
-        <pubTime>2015-10-26T13:29:10.000Z</pubTime>
+        <title>推荐书 -linux就是这个范</title>
+        <pubTime>2015-09-21T13:12:40.000Z</pubTime>
         
          
            
@@ -943,12 +963,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/21/e6-8e-a8-e8-8d-90-e4-b9-a6-linux-e5-b0-b1-e6-98-af-e8-bf-99-e4-b8-aa-e8-8c-83/</loc>
+    <loc>youngjeff.github.io/2015/10/26/e6-8e-a8-e8-8d-90-e4-b9-a6-headfist-e6-b7-b1-e5-85-a5-e6-b5-85-e5-87-ba/</loc>
     <lastmod>2015-11-23T04:19:42.000Z</lastmod>
     <data>
         <display>
-        <title>推荐书 -linux就是这个范</title>
-        <pubTime>2015-09-21T13:12:40.000Z</pubTime>
+        <title>推荐书-headfist(深入浅出)</title>
+        <pubTime>2015-10-26T13:29:10.000Z</pubTime>
         
          
            
@@ -979,24 +999,6 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/24/e6-8e-a8-e8-8d-90-e4-b9-a6-e9-ab-98-e8-b4-a8-e9-87-8fcc-e7-bc-96-e7-a8-8b/</loc>
-    <lastmod>2015-11-23T04:19:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>推荐书-高质量c/c++编程</title>
-        <pubTime>2015-09-24T07:28:02.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="读书笔记" url="youngjeff.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>youngjeff.github.io/2015/08/20/e6-8e-a8-e8-8d-90-e4-b9-a6-e8-ae-a1-e7-ae-97-e6-9c-ba-e5-bf-83-e6-99-ba-e4-b9-8b-e5-93-b2-e5-ad-a6-e5-8e-9f-e7-90-86/</loc>
     <lastmod>2015-11-23T04:19:41.000Z</lastmod>
     <data>
@@ -1015,12 +1017,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/10/16/e6-8e-a8-e8-8d-90-e4-b9-a6-e4-bd-a0-e7-9a-84-e7-81-af-e8-bf-98-e4-ba-ae-e7-9d-80-e5-90-97/</loc>
-    <lastmod>2015-11-23T04:19:40.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/09/24/e6-8e-a8-e8-8d-90-e4-b9-a6-e9-ab-98-e8-b4-a8-e9-87-8fcc-e7-bc-96-e7-a8-8b/</loc>
+    <lastmod>2015-11-23T04:19:41.000Z</lastmod>
     <data>
         <display>
-        <title>推荐书 -你的灯还亮着吗</title>
-        <pubTime>2015-10-16T03:58:33.000Z</pubTime>
+        <title>推荐书-高质量c/c++编程</title>
+        <pubTime>2015-09-24T07:28:02.000Z</pubTime>
         
          
            
@@ -1042,6 +1044,24 @@
         
         <tag>读书</tag>
          
+         
+           
+             
+              <breadCrumb title="读书笔记" url="youngjeff.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>youngjeff.github.io/2015/10/16/e6-8e-a8-e8-8d-90-e4-b9-a6-e4-bd-a0-e7-9a-84-e7-81-af-e8-bf-98-e4-ba-ae-e7-9d-80-e5-90-97/</loc>
+    <lastmod>2015-11-23T04:19:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>推荐书 -你的灯还亮着吗</title>
+        <pubTime>2015-10-16T03:58:33.000Z</pubTime>
+        
          
            
              
@@ -1107,12 +1127,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/10/03/e5-ae-9a-e5-88-b6gnome-e7-9a-84-e4-b8-80-e4-ba-9b-e6-96-b9-e6-b3-95/</loc>
+    <loc>youngjeff.github.io/2015/08/19/e5-ae-89-e8-a3-85lamp-e8-bd-ac-e8-bd-bd-e7-9a-84/</loc>
     <lastmod>2015-11-23T04:19:37.000Z</lastmod>
     <data>
         <display>
-        <title>定制GNOME的一些方法</title>
-        <pubTime>2015-10-03T12:02:32.000Z</pubTime>
+        <title>安装lamp</title>
+        <pubTime>2015-08-19T02:03:30.000Z</pubTime>
         
          
            
@@ -1125,12 +1145,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/e5-ae-89-e8-a3-85lamp-e8-bd-ac-e8-bd-bd-e7-9a-84/</loc>
+    <loc>youngjeff.github.io/2015/10/03/e5-ae-9a-e5-88-b6gnome-e7-9a-84-e4-b8-80-e4-ba-9b-e6-96-b9-e6-b3-95/</loc>
     <lastmod>2015-11-23T04:19:37.000Z</lastmod>
     <data>
         <display>
-        <title>安装lamp</title>
-        <pubTime>2015-08-19T02:03:30.000Z</pubTime>
+        <title>定制GNOME的一些方法</title>
+        <pubTime>2015-10-03T12:02:32.000Z</pubTime>
         
          
            
@@ -1161,24 +1181,6 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/e5-9c-a8fedora-e9-87-8c-e5-bb-ba-e7-ab-8bgnomedesktop-e5-bf-ab-e6-8d-b7-e6-b3-95-e6-96-b9-e5-bc-8f/</loc>
-    <lastmod>2015-11-23T04:19:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>在fedora里建立gnome,desktop快捷法方式,</title>
-        <pubTime>2015-08-19T02:53:31.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>youngjeff.github.io/2015/10/17/e5-a6-82-e4-bd-95-e6-96-b0-e5-ad-a6-e4-b9-a0-e4-b8-80-e9-97-a8-e6-8a-80-e6-9c-af/</loc>
     <lastmod>2015-11-23T04:19:35.000Z</lastmod>
     <data>
@@ -1190,6 +1192,24 @@
            
              
               <breadCrumb title="未分类" url="youngjeff.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>youngjeff.github.io/2015/08/19/e5-9c-a8fedora-e9-87-8c-e5-bb-ba-e7-ab-8bgnomedesktop-e5-bf-ab-e6-8d-b7-e6-b3-95-e6-96-b9-e5-bc-8f/</loc>
+    <lastmod>2015-11-23T04:19:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>在fedora里建立gnome,desktop快捷法方式,</title>
+        <pubTime>2015-08-19T02:53:31.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>
@@ -1224,28 +1244,6 @@
         <title>制作linux u盘启动盘,和恢复u盘</title>
         <pubTime>2015-10-20T07:37:45.000Z</pubTime>
         
-         
-           
-             
-              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>youngjeff.github.io/2015/08/22/e5-88-86-e5-8c-ba-e7-9a-84-e6-a6-82-e5-bf-b5/</loc>
-    <lastmod>2015-11-23T04:19:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>分区的概念</title>
-        <pubTime>2015-08-22T05:45:20.000Z</pubTime>
-        
-        <tag>分区</tag>
-         
-        <tag>系统</tag>
-         
          
            
              
@@ -1297,6 +1295,28 @@
 
     
   <url>
+    <loc>youngjeff.github.io/2015/08/22/e5-88-86-e5-8c-ba-e7-9a-84-e6-a6-82-e5-bf-b5/</loc>
+    <lastmod>2015-11-23T04:19:33.000Z</lastmod>
+    <data>
+        <display>
+        <title>分区的概念</title>
+        <pubTime>2015-08-22T05:45:20.000Z</pubTime>
+        
+        <tag>分区</tag>
+         
+        <tag>系统</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>youngjeff.github.io/2015/09/03/coding-e8-84-9a-e6-9c-ac-e6-8e-a8-e4-bb-a3-e7-a0-81ssh-e5-af-86-e9-92-a5-e8-ae-a4-e8-af-86/</loc>
     <lastmod>2015-11-23T04:19:32.000Z</lastmod>
     <data>
@@ -1333,26 +1353,6 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/24/wget-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8/</loc>
-    <lastmod>2015-11-23T04:19:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>wget 如何使用</title>
-        <pubTime>2015-08-24T02:00:22.000Z</pubTime>
-        
-        <tag>wget</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>youngjeff.github.io/2015/11/03/markdown-e8-af-ad-e6-b3-95-e7-ae-80-e4-bb-8b/</loc>
     <lastmod>2015-11-23T04:19:26.000Z</lastmod>
     <data>
@@ -1379,6 +1379,26 @@
         <pubTime>2015-08-25T01:44:23.000Z</pubTime>
         
         <tag>linux版本</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>youngjeff.github.io/2015/08/24/wget-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8/</loc>
+    <lastmod>2015-11-23T04:19:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>wget 如何使用</title>
+        <pubTime>2015-08-24T02:00:22.000Z</pubTime>
+        
+        <tag>wget</tag>
          
          
            
@@ -1481,12 +1501,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/11/08/qt-e6-95-b0-e7-8b-ac-e8-ae-a1-e7-ae-97-e5-99-a8/</loc>
+    <loc>youngjeff.github.io/2015/09/28/python-sphinx-e5-ae-89-e8-a3-85-e5-92-8cqt-e5-ad-a6-e4-b9-a0-e4-b9-8b-e8-b7-af2-e7-9a-84html-e7-94-9f-e6-88-90/</loc>
     <lastmod>2015-11-23T04:19:22.000Z</lastmod>
     <data>
         <display>
-        <title>qt-数独计算器</title>
-        <pubTime>2015-11-08T05:59:41.000Z</pubTime>
+        <title>python sphinx安装和qt学习之路(2)的html生成</title>
+        <pubTime>2015-09-28T07:26:52.000Z</pubTime>
         
          
            
@@ -1499,12 +1519,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/28/python-sphinx-e5-ae-89-e8-a3-85-e5-92-8cqt-e5-ad-a6-e4-b9-a0-e4-b9-8b-e8-b7-af2-e7-9a-84html-e7-94-9f-e6-88-90/</loc>
+    <loc>youngjeff.github.io/2015/11/08/qt-e6-95-b0-e7-8b-ac-e8-ae-a1-e7-ae-97-e5-99-a8/</loc>
     <lastmod>2015-11-23T04:19:22.000Z</lastmod>
     <data>
         <display>
-        <title>python sphinx安装和qt学习之路(2)的html生成</title>
-        <pubTime>2015-09-28T07:26:52.000Z</pubTime>
+        <title>qt-数独计算器</title>
+        <pubTime>2015-11-08T05:59:41.000Z</pubTime>
         
          
            
@@ -1553,12 +1573,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/11/05/linux-e6-b7-bb-e5-8a-a0c-e6-89-8b-e5-86-8c/</loc>
+    <loc>youngjeff.github.io/2015/11/15/linux-e8-a7-a3-e5-8e-8brar-e6-96-87-e4-bb-b6/</loc>
     <lastmod>2015-11-23T04:19:20.000Z</lastmod>
     <data>
         <display>
-        <title>linux 添加c++手册</title>
-        <pubTime>2015-11-05T11:17:07.000Z</pubTime>
+        <title>linux-解压rar文件</title>
+        <pubTime>2015-11-15T10:29:18.000Z</pubTime>
         
          
            
@@ -1571,12 +1591,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/11/15/linux-e8-a7-a3-e5-8e-8brar-e6-96-87-e4-bb-b6/</loc>
+    <loc>youngjeff.github.io/2015/11/05/linux-e6-b7-bb-e5-8a-a0c-e6-89-8b-e5-86-8c/</loc>
     <lastmod>2015-11-23T04:19:20.000Z</lastmod>
     <data>
         <display>
-        <title>linux-解压rar文件</title>
-        <pubTime>2015-11-15T10:29:18.000Z</pubTime>
+        <title>linux 添加c++手册</title>
+        <pubTime>2015-11-05T11:17:07.000Z</pubTime>
         
          
            
