@@ -66,7 +66,7 @@
 <meta property="og:description" content="窗口和句柄在windows程序中，窗口时通过句柄(HWND)来标识的。我们要对某个窗口进行操作，首先就要获得这个窗口的句柄。在windows程序中，有各种各样的资源(窗口，图标，光标),系统在创建这些资源时会为他们分配内存。
 消息与消息队列windows程序设计是一种事件驱动的程序设计模式，主要是基于消息的。比如用户在绘图时按下鼠标左键。此时，操作系统会感知这一事件，于是将这一事件包成一个消息，投">
 <meta property="og:image" content="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160404213030.png">
-<meta property="og:updated_time" content="2016-04-04T13:49:28.646Z">
+<meta property="og:updated_time" content="2016-04-05T04:57:56.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mfc初识-结构学习">
 <meta name="twitter:description" content="窗口和句柄在windows程序中，窗口时通过句柄(HWND)来标识的。我们要对某个窗口进行操作，首先就要获得这个窗口的句柄。在windows程序中，有各种各样的资源(窗口，图标，光标),系统在创建这些资源时会为他们分配内存。
@@ -298,7 +298,7 @@
 
       
         <h2 id="窗口和句柄"><a href="#窗口和句柄" class="headerlink" title="窗口和句柄"></a>窗口和句柄</h2><p>在windows程序中，窗口时通过句柄(HWND)来标识的。我们要对某个窗口进行操作，首先就要获得这个窗口的句柄。在windows程序中，有各种各样的资源(窗口，图标，光标),系统在创建这些资源时会为他们分配内存。</p>
-<h2 id="消息与消息队列"><a href="#消息与消息队列" class="headerlink" title="消息与消息队列"></a>消息与消息队列</h2><p>windows程序设计是一种事件驱动的程序设计模式，主要是基于消息的。比如用户在绘图时按下鼠标左键。此时，操作系统会感知这一事件，于是将这一事件包成一个消息，投递到程序的消息队列中，然后程序从消息队列中取出消息并响应。在这个处理过程中，操作系统也会给程序“发送消息”，实际上是操作系统调用程序中一个专门负责处理消息的函数。</p>
+<h2 id="消息与消息队列"><a href="#消息与消息队列" class="headerlink" title="消息与消息队列"></a>消息与消息队列</h2><p>windows程序设计是一种事件驱动的程序设计模式，主要是基于消息的。比如用户在绘图时按下鼠标左键。此时，操作系统会感知这一事件，于是将这一事件包成一个消息，投递到程序的消息队列中，然后程序从消息队列中取出消息并响应。在这个处理过程中，操作系统也会给程序“发送消息”，实际上是操作系统调用程序中一个专门负责处理消息的函数。<br><a id="more"></a></p>
 <h2 id="WINMain函数"><a href="#WINMain函数" class="headerlink" title="WINMain函数"></a>WINMain函数</h2><p>winMain函数就是应用程序的基础，系统启动一个程序时，它就是启动winMain函数，程序的实现步骤:<br>1.WinMain函数的定义<br>2.创建一个窗口<br>3.进行消息循环<br>4.编写窗口过程函数</p>
 <h2 id="消息循环"><a href="#消息循环" class="headerlink" title="消息循环"></a>消息循环</h2><p>在创建窗口，显示窗口和更新窗口后，我们需要编写一个消息循环，不断地取出消息，并响应。<br>win32 程序开发流程<br><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160404213030.png" alt=""></p>
 
