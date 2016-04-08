@@ -236,6 +236,117 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/08/vs解决方案文件目录结构分析/" itemprop="url">
+                  vs解决方案文件目录结构分析
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-08T21:40:33+08:00" content="2016-04-08">
+              2016-04-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/vs/" itemprop="url" rel="index">
+                    <span itemprop="name">vs</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>在操作vs的时候，发现它的解决方案文件夹目录很复杂，便在网上查看一些资料，记录下来，<br>基本是就是说解决方案下有一个同名的项目文件，<br>一个Debug文件夹，<br>一个Realise文件夹可能有include文件夹，<br>lib文件夹，<br>生成的程序放在debug文件下，<br>而子目录的debug放的是log文件.</p>
+<h2 id="涉及到的配置："><a href="#涉及到的配置：" class="headerlink" title="涉及到的配置："></a>涉及到的配置：</h2><p>.项目编译时使用的中间目录；<br>.项目链接的输出目录；<br>.项目编译结束后，拷贝生成的 dll 和 lib 到指定目录；<br>.项目编译结束后，拷贝需要的 dll 到输出目录；<br>.设置项目的工作目录；<br>.设置调试时执行的 exe 和工作目录；</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/08/vs解决方案文件目录结构分析/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/04/mfc初识-结构学习/" itemprop="url">
                   mfc初识-结构学习
                 </a>
@@ -1191,116 +1302,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/27/地宫寻宝-解题报告/" itemprop="url">
-                  地宫寻宝-解题报告
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T16:08:28+08:00" content="2016-03-27">
-              2016-03-27
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/算法/" itemprop="url" rel="index">
-                    <span itemprop="name">算法</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>问题描述<br>X 国王有一个地宫宝库。是 n x m 个格子的矩阵。每个格子放一件宝贝。每个宝贝贴着价值标签。<br>地宫的入口在左上角，出口在右下角。<br>小明被带到地宫的入口，国王要求他只能向右或向下行走。<br>走过某个格子时，如果那个格子中的宝贝价值比小明手中任意宝贝价值都大，小明就可以拿起它（当然，也可以不拿）。<br>当小明走到出口时，如果他手中的宝贝恰好是k件，则这些宝贝就可以送给小明。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/27/地宫寻宝-解题报告/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1346,7 +1347,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">97</span>
+              <span class="site-state-item-count">98</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1354,7 +1355,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1363,7 +1364,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
