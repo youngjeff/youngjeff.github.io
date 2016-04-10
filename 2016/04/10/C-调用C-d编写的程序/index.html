@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="算法," />
+  <meta name="keywords" content="C#," />
 
 
 
@@ -57,16 +57,30 @@
 
 
 
-<meta name="description" content="标题: 黄金连分数黄金分割数0.61803… 是个无理数，这个常数十分重要，在许多工程问题中会出现。有时需要把这个数字求得很精确。对于某些精密工程，常数的精度很重要。也许你听说过哈勃太空望远镜，它首次升空后就发现了一处人工加工错误，对那样一个庞然大物，其实只是镜面加工时有比头发丝还细许多倍的一处错误而已，却使它成了“近视眼”!!">
+<meta name="description" content="编写c dll
+
+创建一个win32程序，选择DLL
+新建一个.h 文件比如 CDLL.h
+创建一个.cpp文件 CDLL.cpp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="黄金连分数-解题报告">
-<meta property="og:url" content="youngjeff.github.io/2016/03/27/黄金连分数-解题报告/index.html">
+<meta property="og:title" content="C#调用C++d编写的程序">
+<meta property="og:url" content="youngjeff.github.io/2016/04/10/C-调用C-d编写的程序/index.html">
 <meta property="og:site_name" content="jefflee 的学习笔记">
-<meta property="og:description" content="标题: 黄金连分数黄金分割数0.61803… 是个无理数，这个常数十分重要，在许多工程问题中会出现。有时需要把这个数字求得很精确。对于某些精密工程，常数的精度很重要。也许你听说过哈勃太空望远镜，它首次升空后就发现了一处人工加工错误，对那样一个庞然大物，其实只是镜面加工时有比头发丝还细许多倍的一处错误而已，却使它成了“近视眼”!!">
-<meta property="og:updated_time" content="2016-03-27T08:05:33.020Z">
+<meta property="og:description" content="编写c dll
+
+创建一个win32程序，选择DLL
+新建一个.h 文件比如 CDLL.h
+创建一个.cpp文件 CDLL.cpp">
+<meta property="og:image" content="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160410185419.png">
+<meta property="og:updated_time" content="2016-04-10T10:57:29.665Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黄金连分数-解题报告">
-<meta name="twitter:description" content="标题: 黄金连分数黄金分割数0.61803… 是个无理数，这个常数十分重要，在许多工程问题中会出现。有时需要把这个数字求得很精确。对于某些精密工程，常数的精度很重要。也许你听说过哈勃太空望远镜，它首次升空后就发现了一处人工加工错误，对那样一个庞然大物，其实只是镜面加工时有比头发丝还细许多倍的一处错误而已，却使它成了“近视眼”!!">
+<meta name="twitter:title" content="C#调用C++d编写的程序">
+<meta name="twitter:description" content="编写c dll
+
+创建一个win32程序，选择DLL
+新建一个.h 文件比如 CDLL.h
+创建一个.cpp文件 CDLL.cpp">
+<meta name="twitter:image" content="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160410185419.png">
 
 
 
@@ -84,7 +98,7 @@
   };
 </script>
 
-  <title> 黄金连分数-解题报告 | jefflee 的学习笔记 </title>
+  <title> C#调用C++d编写的程序 | jefflee 的学习笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -234,7 +248,7 @@
             
             
               
-                黄金连分数-解题报告
+                C#调用C++d编写的程序
               
             
           </h1>
@@ -246,8 +260,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T15:38:45+08:00" content="2016-03-27">
-              2016-03-27
+            <time itemprop="dateCreated" datetime="2016-04-10T18:37:16+08:00" content="2016-04-10">
+              2016-04-10
             </time>
           </span>
 
@@ -260,8 +274,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/算法/" itemprop="url" rel="index">
-                    <span itemprop="name">算法</span>
+                  <a href="/categories/c/" itemprop="url" rel="index">
+                    <span itemprop="name">c#</span>
                   </a>
                 </span>
 
@@ -292,7 +306,30 @@
       
 
       
-        <p>标题: 黄金连分数<br>黄金分割数0.61803… 是个无理数，这个常数十分重要，在许多工程问题中会出现。有时需要把这个数字求得很精确。<br>对于某些精密工程，常数的精度很重要。也许你听说过哈勃太空望远镜，它首次升空后就发现了一处人工加工错误，对那样一个庞然大物，其实只是镜面加工时有比头发丝还细许多倍的一处错误而已，却使它成了“近视眼”!!<br><a id="more"></a><br>言归正传，我们如何求得黄金分割数的尽可能精确的值呢？有许多方法。<br>比较简单的一种是用连分数：<br>1<br>黄金数 = ———————<br>1<br>1 + —————–<br>1<br>1 + ————-<br>1<br>1 + ———<br>1 + …<br>这个连分数计算的“层数”越多，它的值越接近黄金分割数。<br>请你利用这一特性，求出黄金分割数的足够精确值，要求四舍五入到小数点后100位。<br>小数点后3位的值为：0.618<br>小数点后4位的值为：0.6180<br>小数点后5位的值为：0.61803<br>小数点后7位的值为：0.6180340<br>（注意尾部的0，不能忽略）<br>你的任务是：写出精确到小数点后100位精度的黄金分割值。<br>注意：尾数的四舍五入！ 尾数是0也要保留！<br>显然答案是一个小数，其小数点后有100位数字，请通过浏览器直接提交该数字。<br>注意：不要提交解答过程，或其它辅助说明类的内容。<br><strong>分析：</strong><br>其实黄金分割数与斐波拉契数列有关，就是连续两个数的商，<br>我们用a【100】来保存商即可，而算商的方法是for循环<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">100</span>];</span><br><span class="line">	<span class="keyword">int</span> b=<span class="number">1</span>,c=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">19</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		b=b+c;</span><br><span class="line">		c=c+b;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;b&lt;&lt;<span class="string">" "</span>&lt;&lt;c&lt;&lt;<span class="built_in">endl</span>; </span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">100</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		a[i]=b/c;</span><br><span class="line">		b=(b%c)*<span class="number">10</span>;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h2 id="编写c-dll"><a href="#编写c-dll" class="headerlink" title="编写c dll"></a>编写c dll</h2><blockquote>
+<ol>
+<li>创建一个win32程序，选择DLL</li>
+<li>新建一个.h 文件比如 CDLL.h</li>
+<li>创建一个.cpp文件 CDLL.cpp<a id="more"></a>
+</li>
+</ol>
+</blockquote>
+<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160410185419.png" alt=""><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span>  <span class="string">"C"</span> _declspec(dllexport) <span class="function"><span class="keyword">int</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span>  <span class="string">"C"</span> _declspec(dllexport) <span class="function"><span class="keyword">int</span> <span class="title">Sub</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x - y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span> <span class="string">"C"</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<ol>
+<li>在.h 文件对函数进行申明</li>
+<li>在.cpp文件里对文件定义 </li>
+</ol>
+<p>extern “C” 包含双重含义，从字面上即可得到：首先，被它修饰的目标&gt;是“extern”的；其次，被它修饰的目标是“C”的。而被extern “C”修饰 &gt;的变量和函数是按照C语言方式编译和连接的。<br><strong>declspec(dllexport)的目的是为了将对应的函数放入到DLL动态库中。       extern “C” </strong>declspec(dllexport)加起来的目的是为了使用DllImport调用非托管C++的DLL文件。因为使用DllImport只能调用由C语言函数做成的DLL。</p>
+</blockquote>
+<h2 id="c-调用dll"><a href="#c-调用dll" class="headerlink" title="c#调用dll"></a>c#调用dll</h2><blockquote>
+<ol>
+<li>将该dll放到c#文件目录下</li>
+<li>开始编写代码<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[DllImport(<span class="string">"Win32Project1.dll"</span>, EntryPoint = <span class="string">"Add"</span>, CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]</span><br><span class="line">        <span class="function"><span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line">        [DllImport(<span class="string">"Win32Project1.dll"</span>, EntryPoint = <span class="string">"Sub"</span>, CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]</span><br><span class="line">        <span class="function"><span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Sub</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span><br><span class="line">        </span>&#123;</span><br><span class="line">            Console.WriteLine(Add(<span class="number">10</span>, <span class="number">2</span>).ToString());</span><br><span class="line">            Console.WriteLine(Sub(<span class="number">10</span>, <span class="number">2</span>).ToString());</span><br><span class="line">            Console.Read();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>dllimport 调用该dll, EntryPoint 调用函数的名字，CharSet 字符编码,<br>CharSet属性是用来确定在托管与非托管调用的过程中用什么字符编码来封送数据，因为我们的.NET平台是采用的Unicode编码，而标准C++是采用的Ansi编码，在我们了解了非托管代码的编码方式之后，我们就很确定用什么编码，那么如果我们不清楚非托管代码是用什么语言编写的或者不清楚它的编码方式时，我们可以使用CharSet枚举中的auto值，让CLR自动为我们处理相关细节；<br>DllImport特性中的CallingConvention可选属性；<br>CallingConvention属性也是一个比较重要的属性，在平台调用的过程中起到查找入口点的作用，在托管代码进行非托管代码入口点查找时，会通过CallingConvention中的值进行确认非托管入口点的调用约定，上篇文章中我们提到了调用约定的一些概念，</p>
+</blockquote>
 
       
     </div>
@@ -307,7 +344,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/算法/" rel="tag">#算法</a>
+            <a href="/tags/C/" rel="tag">#C#</a>
           
         </div>
       
@@ -316,17 +353,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/27/中文文章分析/" rel="next" title="中文文章分析">
-                <i class="fa fa-chevron-left"></i> 中文文章分析
+              <a href="/2016/04/09/ffmpeg-sdl解码h264数据流程/" rel="next" title="ffmpeg+sdl解码h264数据流程">
+                <i class="fa fa-chevron-left"></i> ffmpeg+sdl解码h264数据流程
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/27/39阶台阶-解题报告/" rel="prev" title="39阶台阶-解题报告">
-                39阶台阶-解题报告 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -487,7 +520,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编写c-dll"><span class="nav-number">1.</span> <span class="nav-text">编写c dll</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#c-调用dll"><span class="nav-number">2.</span> <span class="nav-text">c#调用dll</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
