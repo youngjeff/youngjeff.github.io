@@ -63,7 +63,7 @@
 新建一个.h 文件比如 CDLL.h
 创建一个.cpp文件 CDLL.cpp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C#调用C++d编写的程序">
+<meta property="og:title" content="C#调用C++ dll编写的程序">
 <meta property="og:url" content="youngjeff.github.io/2016/04/10/C-调用C-d编写的程序/index.html">
 <meta property="og:site_name" content="jefflee 的学习笔记">
 <meta property="og:description" content="编写c dll
@@ -72,9 +72,9 @@
 新建一个.h 文件比如 CDLL.h
 创建一个.cpp文件 CDLL.cpp">
 <meta property="og:image" content="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160410185419.png">
-<meta property="og:updated_time" content="2016-04-10T11:00:49.262Z">
+<meta property="og:updated_time" content="2016-04-11T12:58:02.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C#调用C++d编写的程序">
+<meta name="twitter:title" content="C#调用C++ dll编写的程序">
 <meta name="twitter:description" content="编写c dll
 
 创建一个win32程序，选择DLL
@@ -98,7 +98,7 @@
   };
 </script>
 
-  <title> C#调用C++d编写的程序 | jefflee 的学习笔记 </title>
+  <title> C#调用C++ dll编写的程序 | jefflee 的学习笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +248,7 @@
             
             
               
-                C#调用C++d编写的程序
+                C#调用C++ dll编写的程序
               
             
           </h1>
@@ -314,7 +314,7 @@
 </li>
 </ol>
 </blockquote>
-<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160410185419.png" alt=""><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span>  <span class="string">"C"</span> _declspec(dllexport) <span class="function"><span class="keyword">int</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span>  <span class="string">"C"</span> _declspec(dllexport) <span class="function"><span class="keyword">int</span> <span class="title">Sub</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x - y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span> <span class="string">"C"</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160410185419.png" alt=""><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span>  <span class="string">"C"</span> _declspec(dllexport) <span class="function"><span class="keyword">int</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">extern</span>  <span class="string">"C"</span> _declspec(dllexport) <span class="function"><span class="keyword">int</span> <span class="title">Sub</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> x - y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <ol>
 <li>在.h 文件对函数进行申明</li>
@@ -325,7 +325,7 @@
 <h2 id="c-调用dll"><a href="#c-调用dll" class="headerlink" title="c#调用dll"></a>c#调用dll</h2><blockquote>
 <ol>
 <li>将该dll放到c#文件目录下</li>
-<li>开始编写代码<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[DllImport(<span class="string">"Win32Project1.dll"</span>, EntryPoint = <span class="string">"Add"</span>, CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]</span><br><span class="line">        <span class="function"><span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line">        [DllImport(<span class="string">"Win32Project1.dll"</span>, EntryPoint = <span class="string">"Sub"</span>, CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]</span><br><span class="line">        <span class="function"><span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Sub</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span><br><span class="line">        </span>&#123;</span><br><span class="line">            Console.WriteLine(Add(<span class="number">10</span>, <span class="number">2</span>).ToString());</span><br><span class="line">            Console.WriteLine(Sub(<span class="number">10</span>, <span class="number">2</span>).ToString());</span><br><span class="line">            Console.Read();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<li>开始编写代码<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[DllImport(<span class="string">"Win32Project1.dll"</span>, EntryPoint = <span class="string">"Add"</span>, CharSet = CharSet.Auto,CallingConvention = CallingConvention.Cdecl)]</span><br><span class="line">        <span class="function"><span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line">[DllImport(<span class="string">"Win32Project1.dll"</span>, EntryPoint = <span class="string">"Sub"</span>, CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]</span><br><span class="line">        <span class="function"><span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Sub</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span><br><span class="line">        </span>&#123;</span><br><span class="line">            Console.WriteLine(Add(<span class="number">10</span>, <span class="number">2</span>).ToString());</span><br><span class="line">            Console.WriteLine(Sub(<span class="number">10</span>, <span class="number">2</span>).ToString());</span><br><span class="line">            Console.Read();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>dllimport 调用该dll, EntryPoint 调用函数的名字，CharSet 字符编码,<br>CharSet属性是用来确定在托管与非托管调用的过程中用什么字符编码来封送数据，因为我们的.NET平台是采用的Unicode编码，而标准C++是采用的Ansi编码，在我们了解了非托管代码的编码方式之后，我们就很确定用什么编码，那么如果我们不清楚非托管代码是用什么语言编写的或者不清楚它的编码方式时，我们可以使用CharSet枚举中的auto值，让CLR自动为我们处理相关细节；<br>DllImport特性中的CallingConvention可选属性；<br>CallingConvention属性也是一个比较重要的属性，在平台调用的过程中起到查找入口点的作用，在托管代码进行非托管代码入口点查找时，会通过CallingConvention中的值进行确认非托管入口点的调用约定，上篇文章中我们提到了调用约定的一些概念，</p>
