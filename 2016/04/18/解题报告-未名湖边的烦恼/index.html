@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="vs," />
+  <meta name="keywords" content="Hexo, jeff" />
 
 
 
@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="分析在操作vs的时候，发现它的解决方案文件夹目录很复杂，便在网上查看一些资料，记录下来，基本是就是说解决方案下有一个同名的项目文件，一个Debug文件夹，一个Realise文件夹可能有include文件夹，lib文件夹，生成的程序放在debug文件下，而子目录的debug放的是log文件.
-涉及到的配置：.项目编译时使用的中间目录；.项目链接的输出目录；.项目编译结束后，拷贝生成的 dll 和 l">
+<meta name="description" content="问题描述　　每年冬天，北大未名湖上都是滑冰的好地方。北大体育组准备了许多冰鞋，可是人太多了，每天下午收工后，常常一双冰鞋都不剩。　　每天早上，租鞋窗口都会排起长龙，假设有还鞋的m个，有需要租鞋的n个。现在的问题是，这些人有多少种排法，可以避免出现体育组没有冰鞋可租的尴尬场面。（两个同样需求的人（比如都是租鞋或都是还鞋）交换位置是同一种排法）输入格式　　两个整数，表示m和n输出格式　　一个整数，表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vs解决方案文件目录结构分析">
-<meta property="og:url" content="youngjeff.github.io/2016/04/08/vs解决方案文件目录结构分析/index.html">
+<meta property="og:title" content="解题报告-未名湖边的烦恼">
+<meta property="og:url" content="youngjeff.github.io/2016/04/18/解题报告-未名湖边的烦恼/index.html">
 <meta property="og:site_name" content="jefflee 的学习笔记">
-<meta property="og:description" content="分析在操作vs的时候，发现它的解决方案文件夹目录很复杂，便在网上查看一些资料，记录下来，基本是就是说解决方案下有一个同名的项目文件，一个Debug文件夹，一个Realise文件夹可能有include文件夹，lib文件夹，生成的程序放在debug文件下，而子目录的debug放的是log文件.
-涉及到的配置：.项目编译时使用的中间目录；.项目链接的输出目录；.项目编译结束后，拷贝生成的 dll 和 l">
-<meta property="og:updated_time" content="2016-04-08T13:49:12.116Z">
+<meta property="og:description" content="问题描述　　每年冬天，北大未名湖上都是滑冰的好地方。北大体育组准备了许多冰鞋，可是人太多了，每天下午收工后，常常一双冰鞋都不剩。　　每天早上，租鞋窗口都会排起长龙，假设有还鞋的m个，有需要租鞋的n个。现在的问题是，这些人有多少种排法，可以避免出现体育组没有冰鞋可租的尴尬场面。（两个同样需求的人（比如都是租鞋或都是还鞋）交换位置是同一种排法）输入格式　　两个整数，表示m和n输出格式　　一个整数，表">
+<meta property="og:updated_time" content="2016-04-18T13:44:33.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vs解决方案文件目录结构分析">
-<meta name="twitter:description" content="分析在操作vs的时候，发现它的解决方案文件夹目录很复杂，便在网上查看一些资料，记录下来，基本是就是说解决方案下有一个同名的项目文件，一个Debug文件夹，一个Realise文件夹可能有include文件夹，lib文件夹，生成的程序放在debug文件下，而子目录的debug放的是log文件.
-涉及到的配置：.项目编译时使用的中间目录；.项目链接的输出目录；.项目编译结束后，拷贝生成的 dll 和 l">
+<meta name="twitter:title" content="解题报告-未名湖边的烦恼">
+<meta name="twitter:description" content="问题描述　　每年冬天，北大未名湖上都是滑冰的好地方。北大体育组准备了许多冰鞋，可是人太多了，每天下午收工后，常常一双冰鞋都不剩。　　每天早上，租鞋窗口都会排起长龙，假设有还鞋的m个，有需要租鞋的n个。现在的问题是，这些人有多少种排法，可以避免出现体育组没有冰鞋可租的尴尬场面。（两个同样需求的人（比如都是租鞋或都是还鞋）交换位置是同一种排法）输入格式　　两个整数，表示m和n输出格式　　一个整数，表">
 
 
 
@@ -87,7 +84,7 @@
   };
 </script>
 
-  <title> vs解决方案文件目录结构分析 | jefflee 的学习笔记 </title>
+  <title> 解题报告-未名湖边的烦恼 | jefflee 的学习笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -237,7 +234,7 @@
             
             
               
-                vs解决方案文件目录结构分析
+                解题报告-未名湖边的烦恼
               
             
           </h1>
@@ -249,30 +246,11 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-08T21:40:33+08:00" content="2016-04-08">
-              2016-04-08
+            <time itemprop="dateCreated" datetime="2016-04-18T21:35:13+08:00" content="2016-04-18">
+              2016-04-18
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/vs/" itemprop="url" rel="index">
-                    <span itemprop="name">vs</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
@@ -295,25 +273,10 @@
       
 
       
-        <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>在操作vs的时候，发现它的解决方案文件夹目录很复杂，便在网上查看一些资料，记录下来，<br>基本是就是说解决方案下有一个同名的项目文件，<br>一个Debug文件夹，<br>一个Realise文件夹可能有include文件夹，<br>lib文件夹，<br>生成的程序放在debug文件下，<br>而子目录的debug放的是log文件.</p>
-<h2 id="涉及到的配置："><a href="#涉及到的配置：" class="headerlink" title="涉及到的配置："></a>涉及到的配置：</h2><p>.项目编译时使用的中间目录；<br>.项目链接的输出目录；<br>.项目编译结束后，拷贝生成的 dll 和 lib 到指定目录；<br>.项目编译结束后，拷贝需要的 dll 到输出目录；<br>.设置项目的工作目录；<br>.设置调试时执行的 exe 和工作目录；</p>
-<a id="more"></a>
-<h2 id="配置时使用到的一些宏："><a href="#配置时使用到的一些宏：" class="headerlink" title="配置时使用到的一些宏："></a>配置时使用到的一些宏：</h2><p>ConfigurationName   配置名字，通常是Debug或者Release<br>IntDir              编译器使用的中间目录，产出obj文件<br>OutDir              链接器使用的输出目录<br>ProjectDir          项目目录<br>ProjectName         项目名字<br>SolutionDir         解决方案目录<br>TargetDir           目标输出文件所在的目录<br>TargetExt           目标输出的扩展名<br>TargetFileName      目标输出文件名，包括扩展名<br>TargetName          目标输出名，不包括扩展名<br>TargetPath          目标输出文件的全路径名</p>
-<p>下面以 Sticker 为例展示目录结构设置的过程：<br>Sticker 目录结构：<br>Sticker<br>    +– 3rd (第三方库)<br>    |   +– dll<br>    |   |   +– debug<br>    |   |   +– release<br>    |   +– lib<br>    |   |   +– debug<br>    |   |   +– release<br>    |   +– include<br>    |<br>    +– src (源码)<br>    |   +– Sticker<br>    |   |   +– Sticker 项目的代码<br>    |   +– StickerLibrary<br>    |   |   +– StickerLibrary 项目的代码<br>    |   +– Sticker.sln<br>    |<br>    +– xar (脚本)<br>    |   +– Sticker<br>    |   +– …<br>    |<br>    +– doc (文档)<br>    |<br>    +– bin (可执行文件)<br>    |   +– debug<br>    |   +– release<br>    |<br>    +– temp (中间目录)<br>        +– compile<br>        |   +– debug<br>        |   +– release<br>        +– link<br>            +– debug<br>            +– release</p>
-<h2 id="操作顺序"><a href="#操作顺序" class="headerlink" title="操作顺序"></a>操作顺序</h2><ol>
-<li>创建文件夹 Sticker\src</li>
-<li>创建一个空的解决方案 Sticker.sln ，放入 Sticker\src 中</li>
-<li>创建项目 Sticker</li>
-<li>属性 –&gt; 配置 设定为“所有配置”，这样可以同时设定 debug\release 下的配置</li>
-<li>配置属性 –&gt; 常规 –&gt; 中间目录： $(SolutionDir)..\temp\compile\$(ConfigurationName)</li>
-<li>配置属性 –&gt; 常规 –&gt; 输出目录： $(SolutionDir)..\temp\link\$(ConfigurationName)</li>
-<li>配置属性 –&gt; C/C++ –&gt; 常规 –&gt; 附加包含目录： “$(SolutionDir)..\3rd\include”</li>
-<li>配置属性 –&gt; 链接器 –&gt; 常规 –&gt; 附加库目录： “$(SolutionDir)..\3rd\lib\$(ConfigurationName)”</li>
-<li>配置属性 –&gt; 链接器 –&gt; 输入 –&gt; 附加依赖项： xxx1.lib xxx2.lib xxx3.lib</li>
-<li>配置属性 –&gt; 生成事件 –&gt; 生成后事件 –&gt; 命令行：<br>md $(SolutionDir)..\bin\$(ConfigurationName)<br>copy $(TargetPath) $(SolutionDir)..\bin\$(ConfigurationName)<br>copy $(SolutionDir)..\3rd\dll\$(ConfigurationName) $(SolutionDir)..\bin\$(ConfigurationName)</li>
-<li>配置属性 –&gt; 调试 –&gt; 命令： $(SolutionDir)..\bin\$(ConfigurationName)\$(TargetFileName)</li>
-<li>配置属性 –&gt; 调试 –&gt; 工作目录： $(SolutionDir)..\bin\$(ConfigurationName)\</li>
-</ol>
+        <blockquote>
+<p>问题描述<br>　　每年冬天，北大未名湖上都是滑冰的好地方。北大体育组准备了许多冰鞋，可是人太多了，每天下午收工后，常常一双冰鞋都不剩。<br>　　每天早上，租鞋窗口都会排起长龙，假设有还鞋的m个，有需要租鞋的n个。现在的问题是，这些人有多少种排法，可以避免出现体育组没有冰鞋可租的尴尬场面。（两个同样需求的人（比如都是租鞋或都是还鞋）交换位置是同一种排法）<br>输入格式<br>　　两个整数，表示m和n<br>输出格式<br>　　一个整数，表示队伍的排法的方案数。<br>样例输入<br>3 2<br>样例输出<br>5<br>数据规模和约定<br>　　m,n∈［0,18］</p>
+<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="　　问题分析"></a>　　问题分析</h2><p>tips: 此题就是dp问题，找到状态转移方程即可.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> m,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(m&lt;n<span class="number">-1</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span>(m&gt;<span class="number">0</span>&amp;&amp;n==<span class="number">0</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(m==<span class="number">0</span>&amp;&amp;n&gt;<span class="number">1</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span>(m==<span class="number">0</span>&amp;&amp;n==<span class="number">1</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">return</span> f(m<span class="number">-1</span>,n)+f(m,n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> m,n;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n;</span><br><span class="line">	<span class="keyword">int</span> value = f(m<span class="number">-1</span>,n);</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
 
       
     </div>
@@ -326,28 +289,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/vs/" rel="tag">#vs</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/04/mfc初识-结构学习/" rel="next" title="mfc初识-结构学习">
-                <i class="fa fa-chevron-left"></i> mfc初识-结构学习
+              <a href="/2016/04/10/C-调用C-d编写的程序/" rel="next" title="C#调用C++ dll编写的程序">
+                <i class="fa fa-chevron-left"></i> C#调用C++ dll编写的程序
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/09/ffmpeg-sdl解码h264数据流程/" rel="prev" title="ffmpeg+sdl解码h264数据流程">
-                ffmpeg+sdl解码h264数据流程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -508,7 +461,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-number">1.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#涉及到的配置："><span class="nav-number">2.</span> <span class="nav-text">涉及到的配置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置时使用到的一些宏："><span class="nav-number">3.</span> <span class="nav-text">配置时使用到的一些宏：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作顺序"><span class="nav-number">4.</span> <span class="nav-text">操作顺序</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题分析"><span class="nav-number">1.</span> <span class="nav-text">　　问题分析</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
