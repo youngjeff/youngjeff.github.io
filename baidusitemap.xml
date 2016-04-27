@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>youngjeff.github.io/2016/04/27/%E5%9C%A8%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BEapi%E9%81%87%E5%88%B0%E7%9A%842%E4%B8%AA%E7%A5%9E%E5%A5%87%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2016-04-27T13:26:13.950Z</lastmod>
+    <data>
+        <display>
+        <title>在使用百度地图api遇到的2个神奇问题</title>
+        <pubTime>2016-04-27T13:16:43.000Z</pubTime>
+        
+        <tag>百度api</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>youngjeff.github.io/2016/04/20/%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90-%E5%9E%AB%E5%BA%95%E8%BE%A3%E5%A6%B9/</loc>
     <lastmod>2016-04-20T11:43:21.023Z</lastmod>
     <data>
@@ -808,12 +825,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/26/fedora-e6-9b-b4-e6-8d-a2-e5-bc-80-e6-9c-ba-e7-94-bb-e9-9d-a2/</loc>
+    <loc>youngjeff.github.io/2015/08/26/fedora-e6-94-b9-e5-8f-98-e9-a1-b6-e6-a0-8f-e9-a2-9c-e8-89-b2-e5-92-8c-e5-a4-a7-e5-b0-8f/</loc>
     <lastmod>2015-11-23T04:19:49.000Z</lastmod>
     <data>
         <display>
-        <title>fedora 更换开机画面</title>
-        <pubTime>2015-09-26T12:46:58.000Z</pubTime>
+        <title>fedora 改变顶栏颜色,和大小</title>
+        <pubTime>2015-08-26T02:56:45.000Z</pubTime>
         
          
            
@@ -826,12 +843,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/26/fedora-e6-94-b9-e5-8f-98-e9-a1-b6-e6-a0-8f-e9-a2-9c-e8-89-b2-e5-92-8c-e5-a4-a7-e5-b0-8f/</loc>
+    <loc>youngjeff.github.io/2015/09/26/fedora-e6-9b-b4-e6-8d-a2-e5-bc-80-e6-9c-ba-e7-94-bb-e9-9d-a2/</loc>
     <lastmod>2015-11-23T04:19:49.000Z</lastmod>
     <data>
         <display>
-        <title>fedora 改变顶栏颜色,和大小</title>
-        <pubTime>2015-08-26T02:56:45.000Z</pubTime>
+        <title>fedora 更换开机画面</title>
+        <pubTime>2015-09-26T12:46:58.000Z</pubTime>
         
          
            
@@ -862,12 +879,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/14/fedora-e5-bc-80-e5-90-afssh/</loc>
+    <loc>youngjeff.github.io/2015/08/19/fedora-e5-ae-89-e8-a3-85sun-java/</loc>
     <lastmod>2015-11-23T04:19:48.000Z</lastmod>
     <data>
         <display>
-        <title>fedora 开启ssh</title>
-        <pubTime>2015-09-14T06:44:13.000Z</pubTime>
+        <title>fedora安装sun java</title>
+        <pubTime>2015-08-19T02:26:29.000Z</pubTime>
         
          
            
@@ -880,12 +897,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/fedora-e5-ae-89-e8-a3-85sun-java/</loc>
+    <loc>youngjeff.github.io/2015/09/14/fedora-e5-bc-80-e5-90-afssh/</loc>
     <lastmod>2015-11-23T04:19:48.000Z</lastmod>
     <data>
         <display>
-        <title>fedora安装sun java</title>
-        <pubTime>2015-08-19T02:26:29.000Z</pubTime>
+        <title>fedora 开启ssh</title>
+        <pubTime>2015-09-14T06:44:13.000Z</pubTime>
         
          
            
@@ -1024,13 +1041,15 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/e6-b5-8b-e8-af-95-e7-9a-84-e8-a1-a5-e5-85-85/</loc>
+    <loc>youngjeff.github.io/2015/08/25/e6-ac-a2-e8-bf-8e-e6-9d-a5fedora-e4-b8-ad-e6-96-87-e7-a4-be-e5-8c-ba-e9-80-9b-e9-80-9b/</loc>
     <lastmod>2015-11-23T04:19:44.000Z</lastmod>
     <data>
         <display>
-        <title>测试的补充</title>
-        <pubTime>2015-08-19T02:08:44.000Z</pubTime>
+        <title>欢迎来fedora中文社区逛逛</title>
+        <pubTime>2015-08-25T01:38:51.000Z</pubTime>
         
+        <tag>fedora</tag>
+         
          
            
              
@@ -1042,15 +1061,13 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/25/e6-ac-a2-e8-bf-8e-e6-9d-a5fedora-e4-b8-ad-e6-96-87-e7-a4-be-e5-8c-ba-e9-80-9b-e9-80-9b/</loc>
+    <loc>youngjeff.github.io/2015/08/19/e6-b5-8b-e8-af-95-e7-9a-84-e8-a1-a5-e5-85-85/</loc>
     <lastmod>2015-11-23T04:19:44.000Z</lastmod>
     <data>
         <display>
-        <title>欢迎来fedora中文社区逛逛</title>
-        <pubTime>2015-08-25T01:38:51.000Z</pubTime>
+        <title>测试的补充</title>
+        <pubTime>2015-08-19T02:08:44.000Z</pubTime>
         
-        <tag>fedora</tag>
-         
          
            
              
@@ -1316,24 +1333,6 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/19/e5-9c-a8fedora-e9-87-8c-e5-bb-ba-e7-ab-8bgnomedesktop-e5-bf-ab-e6-8d-b7-e6-b3-95-e6-96-b9-e5-bc-8f/</loc>
-    <lastmod>2015-11-23T04:19:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>在fedora里建立gnome,desktop快捷法方式,</title>
-        <pubTime>2015-08-19T02:53:31.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>youngjeff.github.io/2015/10/17/e5-a6-82-e4-bd-95-e6-96-b0-e5-ad-a6-e4-b9-a0-e4-b8-80-e9-97-a8-e6-8a-80-e6-9c-af/</loc>
     <lastmod>2015-11-23T04:19:35.000Z</lastmod>
     <data>
@@ -1352,12 +1351,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/10/20/e5-88-b6-e4-bd-9clinux-u-e7-9b-98-e5-90-af-e5-8a-a8-e7-9b-98-e5-92-8c-e6-81-a2-e5-a4-8du-e7-9b-98/</loc>
-    <lastmod>2015-11-23T04:19:34.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/08/19/e5-9c-a8fedora-e9-87-8c-e5-bb-ba-e7-ab-8bgnomedesktop-e5-bf-ab-e6-8d-b7-e6-b3-95-e6-96-b9-e5-bc-8f/</loc>
+    <lastmod>2015-11-23T04:19:35.000Z</lastmod>
     <data>
         <display>
-        <title>制作linux u盘启动盘,和恢复u盘</title>
-        <pubTime>2015-10-20T07:37:45.000Z</pubTime>
+        <title>在fedora里建立gnome,desktop快捷法方式,</title>
+        <pubTime>2015-08-19T02:53:31.000Z</pubTime>
         
          
            
@@ -1390,6 +1389,24 @@
 
     
   <url>
+    <loc>youngjeff.github.io/2015/10/20/e5-88-b6-e4-bd-9clinux-u-e7-9b-98-e5-90-af-e5-8a-a8-e7-9b-98-e5-92-8c-e6-81-a2-e5-a4-8du-e7-9b-98/</loc>
+    <lastmod>2015-11-23T04:19:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>制作linux u盘启动盘,和恢复u盘</title>
+        <pubTime>2015-10-20T07:37:45.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>youngjeff.github.io/2015/08/22/e5-88-86-e5-8c-ba-e7-9a-84-e6-a6-82-e5-bf-b5/</loc>
     <lastmod>2015-11-23T04:19:33.000Z</lastmod>
     <data>
@@ -1412,17 +1429,13 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/08/21/e4-b8-ba-e4-bd-95linux-e7-b3-bb-e7-bb-9f-e6-b2-a1-e6-9c-89-e7-a3-81-e7-9b-98-e7-a3-81-e7-89-87/</loc>
+    <loc>youngjeff.github.io/2015/10/01/e4-b8-ba-e4-bd-95gnome3-e6-97-a0-e6-b3-95-e4-bd-bf-e7-94-a8compiz-e5-92-8cgnome-shell-e7-89-b9-e8-89-b2/</loc>
     <lastmod>2015-11-23T04:19:33.000Z</lastmod>
     <data>
         <display>
-        <title>为何linux系统没有磁盘磁片,和选择ssd的优点.</title>
-        <pubTime>2015-08-21T06:01:38.000Z</pubTime>
+        <title>为何gnome3无法使用compiz,和gnome-shell特色</title>
+        <pubTime>2015-10-01T12:40:56.000Z</pubTime>
         
-        <tag>linux</tag>
-         
-        <tag>好处</tag>
-         
          
            
              
@@ -1434,13 +1447,17 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/10/01/e4-b8-ba-e4-bd-95gnome3-e6-97-a0-e6-b3-95-e4-bd-bf-e7-94-a8compiz-e5-92-8cgnome-shell-e7-89-b9-e8-89-b2/</loc>
+    <loc>youngjeff.github.io/2015/08/21/e4-b8-ba-e4-bd-95linux-e7-b3-bb-e7-bb-9f-e6-b2-a1-e6-9c-89-e7-a3-81-e7-9b-98-e7-a3-81-e7-89-87/</loc>
     <lastmod>2015-11-23T04:19:33.000Z</lastmod>
     <data>
         <display>
-        <title>为何gnome3无法使用compiz,和gnome-shell特色</title>
-        <pubTime>2015-10-01T12:40:56.000Z</pubTime>
+        <title>为何linux系统没有磁盘磁片,和选择ssd的优点.</title>
+        <pubTime>2015-08-21T06:01:38.000Z</pubTime>
         
+        <tag>linux</tag>
+         
+        <tag>好处</tag>
+         
          
            
              
@@ -1564,6 +1581,24 @@
 
     
   <url>
+    <loc>youngjeff.github.io/2015/11/14/qt-e7-bc-96-e5-86-99flappy-bird/</loc>
+    <lastmod>2015-11-23T04:19:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>qt-编写flappy-bird</title>
+        <pubTime>2015-11-14T09:11:58.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="qt" url="youngjeff.github.io/categories/qt/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>youngjeff.github.io/2015/09/15/ssh-e5-9f-ba-e6-9c-ac-e4-bd-bf-e7-94-a8-e5-92-8c-e6-90-ad-e5-bb-baopenshift/</loc>
     <lastmod>2015-11-23T04:19:24.000Z</lastmod>
     <data>
@@ -1582,12 +1617,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/11/14/qt-e7-bc-96-e5-86-99flappy-bird/</loc>
-    <lastmod>2015-11-23T04:19:24.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/10/06/qt-e7-bc-96-e5-86-99-e7-9a-84-e8-b4-aa-e5-90-83-e8-9b-87-e6-b8-b8-e6-88-8f/</loc>
+    <lastmod>2015-11-23T04:19:23.000Z</lastmod>
     <data>
         <display>
-        <title>qt-编写flappy-bird</title>
-        <pubTime>2015-11-14T09:11:58.000Z</pubTime>
+        <title>qt 编写的贪吃蛇游戏</title>
+        <pubTime>2015-10-06T03:30:34.000Z</pubTime>
         
          
            
@@ -1618,12 +1653,12 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/10/06/qt-e7-bc-96-e5-86-99-e7-9a-84-e8-b4-aa-e5-90-83-e8-9b-87-e6-b8-b8-e6-88-8f/</loc>
-    <lastmod>2015-11-23T04:19:23.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/09/28/python-sphinx-e5-ae-89-e8-a3-85-e5-92-8cqt-e5-ad-a6-e4-b9-a0-e4-b9-8b-e8-b7-af2-e7-9a-84html-e7-94-9f-e6-88-90/</loc>
+    <lastmod>2015-11-23T04:19:22.000Z</lastmod>
     <data>
         <display>
-        <title>qt 编写的贪吃蛇游戏</title>
-        <pubTime>2015-10-06T03:30:34.000Z</pubTime>
+        <title>python sphinx安装和qt学习之路(2)的html生成</title>
+        <pubTime>2015-09-28T07:26:52.000Z</pubTime>
         
          
            
@@ -1654,17 +1689,17 @@
 
     
   <url>
-    <loc>youngjeff.github.io/2015/09/28/python-sphinx-e5-ae-89-e8-a3-85-e5-92-8cqt-e5-ad-a6-e4-b9-a0-e4-b9-8b-e8-b7-af2-e7-9a-84html-e7-94-9f-e6-88-90/</loc>
-    <lastmod>2015-11-23T04:19:22.000Z</lastmod>
+    <loc>youngjeff.github.io/2015/08/21/openstack-e5-88-9d-e8-af-86/</loc>
+    <lastmod>2015-11-23T04:19:21.000Z</lastmod>
     <data>
         <display>
-        <title>python sphinx安装和qt学习之路(2)的html生成</title>
-        <pubTime>2015-09-28T07:26:52.000Z</pubTime>
+        <title>openstack 初识</title>
+        <pubTime>2015-08-21T06:24:28.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="qt" url="youngjeff.github.io/categories/qt/"/>
+              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>
@@ -1683,24 +1718,6 @@
            
              
               <breadCrumb title="python的学习过程" url="youngjeff.github.io/categories/python%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>youngjeff.github.io/2015/08/21/openstack-e5-88-9d-e8-af-86/</loc>
-    <lastmod>2015-11-23T04:19:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>openstack 初识</title>
-        <pubTime>2015-08-21T06:24:28.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>
@@ -1744,6 +1761,26 @@
 
     
   <url>
+    <loc>youngjeff.github.io/2015/08/29/linux-e5-86-85-e5-ad-98-e7-ae-a1-e7-90-86-e6-9c-ba-e5-88-b6/</loc>
+    <lastmod>2015-11-23T04:19:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>linux内存管理机制</title>
+        <pubTime>2015-08-29T04:36:39.000Z</pubTime>
+        
+        <tag>linux内存管理</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>youngjeff.github.io/2015/08/29/linux-e5-86-85-e5-ad-98-e7-a2-8e-e7-89-87/</loc>
     <lastmod>2015-11-23T04:19:19.000Z</lastmod>
     <data>
@@ -1771,26 +1808,6 @@
         <title>linux干活整理</title>
         <pubTime>2015-08-19T02:14:37.000Z</pubTime>
         
-         
-           
-             
-              <breadCrumb title="linux的学习记录" url="youngjeff.github.io/categories/linux%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>youngjeff.github.io/2015/08/29/linux-e5-86-85-e5-ad-98-e7-ae-a1-e7-90-86-e6-9c-ba-e5-88-b6/</loc>
-    <lastmod>2015-11-23T04:19:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>linux内存管理机制</title>
-        <pubTime>2015-08-29T04:36:39.000Z</pubTime>
-        
-        <tag>linux内存管理</tag>
-         
          
            
              
