@@ -236,6 +236,188 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/15/父女七日变/" itemprop="url">
+                  父女七日变
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-15T18:45:37+08:00" content="2016-05-15">
+              2016-05-15
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>这部日剧用诙谐幽默的手法拉近了父母和子女的关系，虽然是天马行空，但是其中的教育意义还是值得借鉴的。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/15/父女七日变/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/05/08/解题报告-算法提高-P1001/" itemprop="url">
+                  解题报告-算法提高 P1001
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-08T14:49:36+08:00" content="2016-05-08">
+              2016-05-08
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>当两个比较大的整数相乘时，可能会出现数据溢出的情形。为避免溢出，可以采用字符串的方法来实现两个大数之间的乘法。具体来说，首先以字符串的形式输入两个整数，每个整数的长度不会超过8位，然后把它们相乘的结果存储在另一个字符串当中（长度不会超过16位），最后把这个字符串打印出来。例如，假设用户输入为：62773417和12345678，则输出结果为：774980393241726.</p>
+<p>输入：<br>　　62773417 12345678</p>
+<p>输出：<br>　　774980393241726<br>我的想法就是先把num3[]先求出，在进行位数分离。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> str1,str2;</span><br><span class="line">	<span class="keyword">int</span> num1[<span class="number">100</span>],num2[<span class="number">100</span>],num3[<span class="number">210</span>];</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;str1&gt;&gt;str2;</span><br><span class="line">	<span class="keyword">if</span>(str1 == <span class="string">"0"</span>||str2 == <span class="string">"0"</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">'0'</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">memset</span>(num1,<span class="number">0</span>,<span class="keyword">sizeof</span>(num1));</span><br><span class="line">	<span class="built_in">memset</span>(num2,<span class="number">0</span>,<span class="keyword">sizeof</span>(num2));</span><br><span class="line">	<span class="built_in">memset</span>(num3,<span class="number">0</span>,<span class="keyword">sizeof</span>(num3));</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str1.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		num1[i] = str1[str1.length()<span class="number">-1</span>-i]-<span class="string">'0'</span>;</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str2.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		num2[i] = str2[str2.length()<span class="number">-1</span>-i]-<span class="string">'0'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str1.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;str2.length();j++)</span><br><span class="line">		&#123;</span><br><span class="line">			num3[i+j] += num1[i]*num2[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str1.length()+str2.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">//cout&lt;&lt;temp&lt;&lt;"sd"&lt;&lt;endl;</span></span><br><span class="line">		num3[i]+=temp;</span><br><span class="line">		<span class="comment">//cout&lt;&lt;num3[i]&lt;&lt;"we"&lt;&lt;endl;</span></span><br><span class="line">		temp = num3[i] / <span class="number">10</span>;</span><br><span class="line">		num3[i]%=<span class="number">10</span>;</span><br><span class="line">		<span class="comment">//cout&lt;&lt;num3[i]&lt;&lt;"as"&lt;&lt;endl;</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=str1.length()+str2.length()<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(i==str1.length()+str2.length()<span class="number">-1</span>&amp;&amp;num3[i]==<span class="number">0</span>)</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;num3[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/06/如何阅读一本书/" itemprop="url">
                   如何阅读一本书
                 </a>
@@ -1035,227 +1217,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/04/mfc初识-结构学习/" itemprop="url">
-                  mfc初识-结构学习
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-04T19:33:57+08:00" content="2016-04-04">
-              2016-04-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/mfc/" itemprop="url" rel="index">
-                    <span itemprop="name">mfc</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="窗口和句柄"><a href="#窗口和句柄" class="headerlink" title="窗口和句柄"></a>窗口和句柄</h2><p>在windows程序中，窗口时通过句柄(HWND)来标识的。我们要对某个窗口进行操作，首先就要获得这个窗口的句柄。在windows程序中，有各种各样的资源(窗口，图标，光标),系统在创建这些资源时会为他们分配内存。</p>
-<h2 id="消息与消息队列"><a href="#消息与消息队列" class="headerlink" title="消息与消息队列"></a>消息与消息队列</h2><p>windows程序设计是一种事件驱动的程序设计模式，主要是基于消息的。比如用户在绘图时按下鼠标左键。此时，操作系统会感知这一事件，于是将这一事件包成一个消息，投递到程序的消息队列中，然后程序从消息队列中取出消息并响应。在这个处理过程中，操作系统也会给程序“发送消息”，实际上是操作系统调用程序中一个专门负责处理消息的函数。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/04/mfc初识-结构学习/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/30/读书后感-有些事现在不做，以后也不会做了/" itemprop="url">
-                  读书后感-有些事现在不做，以后也不会做了
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-30T19:51:13+08:00" content="2016-03-30">
-              2016-03-30
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">读书笔记</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="有花折时堪需折，莫待无花空折枝"><a href="#有花折时堪需折，莫待无花空折枝" class="headerlink" title="有花折时堪需折，莫待无花空折枝"></a>有花折时堪需折，莫待无花空折枝</h2><p>“只需去做，生活就会改变”，《有些事现在不做，一辈子都不会做了》是一本看了就想去做点什么的好书。提供的是生活的建议，提供一些大家平时想不到，或者想到了却一直没有去做的事情，并且告诉读者，怎么去做，或者去哪里可以做到。<br>书里讲的事，不是什么惊天动地的大事，有的只是生活中触手可及的小事。但是，生活并不是由大事组成的。这些事，并不枯燥，认真看，每一个都非常有意思，如果这一件又一件的小事都去做了，生活的质量就变了。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/30/读书后感-有些事现在不做，以后也不会做了/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1301,7 +1262,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">105</span>
+              <span class="site-state-item-count">107</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1318,7 +1279,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
