@@ -236,6 +236,117 @@
             
               
                 
+                <a class="post-title-link" href="/2015/08/29/linux-e5-86-85-e5-ad-98-e7-ae-a1-e7-90-86-e6-9c-ba-e5-88-b6/" itemprop="url">
+                  linux内存管理机制
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-08-29T12:36:39+08:00" content="2015-08-29">
+              2015-08-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/linux的学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">linux的学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>在Linux中经常发现空闲内存很少，似乎所有的内存都被系统占用了，表面感觉是内存不够用了，其实不然。这是Linux内存管理的一个优秀特性，在这方面，区别于Windows的内存管理。主要特点是，无论物理内存有多大，Linux 都将其充份利用，将一些程序调用过的硬盘数据读入内存，利用内存读写的高速特性来提高Linux系统的数据访问性能。而Windows是只在需要内存时，才为应用程序分配内存，并不能充分利用大容量的内存空间。换句话说，每增加一些物理内存，Linux都将能充分利用起来，发挥了硬件投资带来的好处，而Windows只将其做为摆设，即使增加8GB甚至更大。</p>
+<p>Linux的这一特性，主要是利用空闲的物理内存，划分出一部份空间，做为cache、buffers ，以此提高数据访问性能。
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/08/29/linux-e5-86-85-e5-ad-98-e7-ae-a1-e7-90-86-e6-9c-ba-e5-88-b6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/08/27/fedora-e5-ae-89-e8-a3-85conky/" itemprop="url">
                   fedora 安装conky
                 </a>
@@ -1222,120 +1333,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/08/22/e5-88-86-e5-8c-ba-e7-9a-84-e6-a6-82-e5-bf-b5/" itemprop="url">
-                  分区的概念
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-08-22T13:45:20+08:00" content="2015-08-22">
-              2015-08-22
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/linux的学习记录/" itemprop="url" rel="index">
-                    <span itemprop="name">linux的学习记录</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <div>
-
-<h2 id="分区概念"><a href="#分区概念" class="headerlink" title="分区概念"></a>分区概念</h2><p></div><br>首先我们需要知道，硬盘分区的存在，是由硬盘的物理特性决定的，并不会因为操作系统的不同而有所改变。</p>
-<p>请您把一块硬盘想象为一本书……即便您不喜欢读书，您也一定非常熟悉它，所有的书都是相同的，包括我们使用的课本……您肯定非常熟悉</p>
-<h2 id="一本完整的书，通常包括书名、目录和正文。"><a href="#一本完整的书，通常包括书名、目录和正文。" class="headerlink" title="一本完整的书，通常包括书名、目录和正文。"></a>一本完整的书，通常包括书名、目录和正文。</h2>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/08/22/e5-88-86-e5-8c-ba-e7-9a-84-e6-a6-82-e5-bf-b5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1381,7 +1378,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">107</span>
+              <span class="site-state-item-count">108</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
