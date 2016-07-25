@@ -236,6 +236,97 @@
             
               
                 
+                <a class="post-title-link" href="/2016/06/24/C-mongodb/" itemprop="url">
+                  C#-mongodb
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-24T20:32:28+08:00" content="2016-06-24">
+              2016-06-24
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>MongoDB  是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bson格式，因此可以存储比较复杂的数据类型。Mongo最大的特点是他支持的查询语言非常强大，其语法有点类似于面向对象的查询语言，几乎可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/06/24/C-mongodb/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/24/新文档/" itemprop="url">
                   记一次程序设计大赛
                 </a>
@@ -285,110 +376,6 @@
               阅读全文 &raquo;
             </a>
           </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/24/C-mongodb/" itemprop="url">
-                  C#-mongodb
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-24T20:32:28+08:00" content="2016-06-24">
-              2016-06-24
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>MongoDB  是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bson格式，因此可以存储比较复杂的数据类型。Mongo最大的特点是他支持的查询语言非常强大，其语法有点类似于面向对象的查询语言，几乎可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。<br>&lt;–more–&gt;<br>本文资料从<a href="http://mongodb.github.io/mongo-csharp-driver/2.0/getting_started/quick_tour/整理而来。" target="_blank" rel="external">http://mongodb.github.io/mongo-csharp-driver/2.0/getting_started/quick_tour/整理而来。</a></p>
-<h2 id="增加一条数据"><a href="#增加一条数据" class="headerlink" title="增加一条数据"></a>增加一条数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var document = new BsonDocument</span><br><span class="line">            &#123;</span><br><span class="line">                  &#123; &quot;name&quot;, &quot;MongoDB&quot; &#125;,</span><br><span class="line">                  &#123; &quot;type&quot;, &quot;Database&quot; &#125;,</span><br><span class="line">                  &#123; &quot;count&quot;, 1 &#125;,</span><br><span class="line">                  &#123; &quot;info&quot;, new BsonDocument</span><br><span class="line">                    &#123;</span><br><span class="line">                  &#123; &quot;x&quot;, 203 &#125;,</span><br><span class="line">                  &#123; &quot;y&quot;, 102 &#125;</span><br><span class="line">                      &#125;&#125;</span><br><span class="line">            &#125;;</span><br><span class="line">            collection.InsertOneAsync(document);</span><br></pre></td></tr></table></figure>
-<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160624204705.png" alt=""></p>
-<h2 id="查看数据条数"><a href="#查看数据条数" class="headerlink" title="查看数据条数"></a>查看数据条数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var count =  collection.CountAsync(new BsonDocument());</span><br><span class="line"></span><br><span class="line">            MessageBox.Show(count.ToString());</span><br></pre></td></tr></table></figure>
-<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160624204724.png" alt=""></p>
-<h2 id="查看检索默认的数据"><a href="#查看检索默认的数据" class="headerlink" title="查看检索默认的数据"></a>查看检索默认的数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">                var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">                var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">                var document =  collection.Find(new BsonDocument()).FirstOrDefaultAsync();</span><br><span class="line">                //Console.WriteLine(document.ToString());</span><br><span class="line">                MessageBox.Show(document.ToString());</span><br><span class="line">![](http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160624204755.png)</span><br></pre></td></tr></table></figure>
-<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160624212125.png" alt=""></p>
-<h2 id="查看所有的数据"><a href="#查看所有的数据" class="headerlink" title="查看所有的数据"></a>查看所有的数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">如果想将链表中所有的数据都返回可以在Find操作之后调用ToListAsync方法就可以，将会直接返回List&lt;T&gt;类型的结果，比如下面的这段代码：</span><br><span class="line"> var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var documents =  collection.Find(new BsonDocument()).ToListAsync().Result;</span><br><span class="line">           foreach(BsonDocument mess in documents)</span><br><span class="line">            &#123;</span><br><span class="line">                MessageBox.Show(mess.ToString());</span><br><span class="line">            &#125;</span><br><span class="line">针对数量较少的数据情况下，上面这种方式是没有问题，但如果我们需要处理大量的数据，那么我们就不能使用上面的这种方式，就需要利用下面的方式，通过ForEachAsync来完成，因为这个方法会在每条数据返回的时候执行一个回调，从而达到并发处理的目的，比如下面这段代码就演示了如何使用：     var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">collection.Find(new BsonDocument()).ForEachAsync(x =&gt; MessageBox.Show(x.ToString()));</span><br></pre></td></tr></table></figure>
-<p><img src="http://7xnav4.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160624212125.png" alt=""></p>
-<h2 id="通过条件查询单条数据"><a href="#通过条件查询单条数据" class="headerlink" title="通过条件查询单条数据"></a>通过条件查询单条数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">我们可以在调用Find方法的时候传入一个过滤条件，从而在链表中查询我们希望的数据</span><br><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var filter = Builders&lt;BsonDocument&gt;.Filter.Eq(&quot;count&quot;, 2);</span><br><span class="line">            var document = collection.Find(filter).FirstAsync().Result;</span><br><span class="line">            MessageBox.Show(document.ToString());</span><br></pre></td></tr></table></figure>
-<h2 id="我们也可以获取多条数据"><a href="#我们也可以获取多条数据" class="headerlink" title="我们也可以获取多条数据"></a>我们也可以获取多条数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">           var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">           var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">           var filter = Builders&lt;BsonDocument&gt;.Filter.Eq(&quot;count&quot;, 2);</span><br><span class="line">           var document = collection.Find(filter).ForEachAsync(x =&gt; MessageBox.Show(x.ToString()));</span><br></pre></td></tr></table></figure>
-<h2 id="对数据排序"><a href="#对数据排序" class="headerlink" title="对数据排序"></a>对数据排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var filter = Builders&lt;BsonDocument&gt;.Filter.Exists(&quot;count&quot;);</span><br><span class="line">            var sort = Builders&lt;BsonDocument&gt;.Sort.Descending(&quot;count&quot;);</span><br><span class="line">            var documnt = collection.Find(filter).Sort(sort).ToListAsync().Result;</span><br><span class="line">            foreach(BsonDocument mess in documnt)</span><br><span class="line">            &#123;</span><br><span class="line">                MessageBox.Show(mess.ToString());</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="对字段投射"><a href="#对字段投射" class="headerlink" title="对字段投射"></a>对字段投射</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">许多时候我们并不需要文档中的所有数据，这就好比在SQL中我们都会只把我们需要的数据select出来，而不会把表中的所有字段的数据都拿出来，自然MongoDB也可以让我这样做，我们只需要跟过滤和排序一样利用Projection构造器来构造然后传递给Project方法中就可以了，下面这个例子中我们将排除“_id”字段：</span><br><span class="line"> var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var projection = Builders&lt;BsonDocument&gt;.Projection.Exclude(&quot;_id&quot;);</span><br><span class="line">            var document = collection.Find(new BsonDocument()).Project(projection).FirstAsync().Result;</span><br><span class="line">            MessageBox.Show(document.ToString());</span><br></pre></td></tr></table></figure>
-<h2 id="更新文档"><a href="#更新文档" class="headerlink" title="更新文档"></a>更新文档</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">果我们需要更新一个对象（如果条件不匹配那么可能是0条），可以使用UpdateOneAsync方法，并执行过滤条件和需要更新到的文档，比如下面我们将“counter”为1的数据中的“counter”更新为110：</span><br><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var filter = Builders&lt;BsonDocument&gt;.Filter.Eq(&quot;count&quot;, 1);</span><br><span class="line">            var updated = Builders&lt;BsonDocument&gt;.Update.Set(&quot;count&quot;, 110);</span><br><span class="line">            var result = collection.UpdateOneAsync(filter, updated).Result;</span><br><span class="line">如果我们需要批量的更新，我们可以调用UpdateManyAsync即可。比如我们需要将“counter”小于10的数据中的“counter”累加100，那么我们就可以像下面这样来写：</span><br><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var filter = Builders&lt;BsonDocument&gt;.Filter.Lt(&quot;count&quot;, 3);</span><br><span class="line">            var updated = Builders&lt;BsonDocument&gt;.Update.Inc(&quot;count&quot;, 100);</span><br><span class="line">            var result = collection.UpdateManyAsync(filter, updated).Result;</span><br></pre></td></tr></table></figure>
-<h2 id="删除文档"><a href="#删除文档" class="headerlink" title="删除文档"></a>删除文档</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">作为基础部分这也是最后一个部分了，利用上面的过滤，然后调用DeleteOneAsync或DeleteManyAsync方法就可以了，比如下面的列子就是删除“counter”大于100的所有数据：</span><br><span class="line">var client = new MongoClient(&quot;mongodb://localhost:27017&quot;);</span><br><span class="line">            var database = client.GetDatabase(&quot;foo&quot;);</span><br><span class="line">            var collection = database.GetCollection&lt;BsonDocument&gt;(&quot;bar&quot;);</span><br><span class="line">            var filter = Builders&lt;BsonDocument&gt;.Filter.Eq(&quot;count&quot;, 102);</span><br><span class="line">            var resut = collection.DeleteManyAsync(filter).Result;</span><br></pre></td></tr></table></figure>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>我在学习mongodb的编程时首先遇到了问题，在网上的很多教程是<br>基于老版本的，一些函数都不能用了，很感慨，技术的更新很快。<br>而且多看官方教程比较好。</p>
-
-          
         
       
     </div>
@@ -932,11 +919,12 @@
 
       
         
-          
-            <p>当两个比较大的整数相乘时，可能会出现数据溢出的情形。为避免溢出，可以采用字符串的方法来实现两个大数之间的乘法。具体来说，首先以字符串的形式输入两个整数，每个整数的长度不会超过8位，然后把它们相乘的结果存储在另一个字符串当中（长度不会超过16位），最后把这个字符串打印出来。例如，假设用户输入为：62773417和12345678，则输出结果为：774980393241726.<br>&lt;–more–&gt;<br>输入：<br>　　62773417 12345678</p>
-<p>输出：<br>　　774980393241726<br>我的想法就是先把num3[]先求出，在进行位数分离。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> str1,str2;</span><br><span class="line">	<span class="keyword">int</span> num1[<span class="number">100</span>],num2[<span class="number">100</span>],num3[<span class="number">210</span>];</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;str1&gt;&gt;str2;</span><br><span class="line">	<span class="keyword">if</span>(str1 == <span class="string">"0"</span>||str2 == <span class="string">"0"</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">'0'</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">memset</span>(num1,<span class="number">0</span>,<span class="keyword">sizeof</span>(num1));</span><br><span class="line">	<span class="built_in">memset</span>(num2,<span class="number">0</span>,<span class="keyword">sizeof</span>(num2));</span><br><span class="line">	<span class="built_in">memset</span>(num3,<span class="number">0</span>,<span class="keyword">sizeof</span>(num3));</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str1.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		num1[i] = str1[str1.length()<span class="number">-1</span>-i]-<span class="string">'0'</span>;</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str2.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		num2[i] = str2[str2.length()<span class="number">-1</span>-i]-<span class="string">'0'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str1.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;str2.length();j++)</span><br><span class="line">		&#123;</span><br><span class="line">			num3[i+j] += num1[i]*num2[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str1.length()+str2.length();i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">//cout&lt;&lt;temp&lt;&lt;"sd"&lt;&lt;endl;</span></span><br><span class="line">		num3[i]+=temp;</span><br><span class="line">		<span class="comment">//cout&lt;&lt;num3[i]&lt;&lt;"we"&lt;&lt;endl;</span></span><br><span class="line">		temp = num3[i] / <span class="number">10</span>;</span><br><span class="line">		num3[i]%=<span class="number">10</span>;</span><br><span class="line">		<span class="comment">//cout&lt;&lt;num3[i]&lt;&lt;"as"&lt;&lt;endl;</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=str1.length()+str2.length()<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(i==str1.length()+str2.length()<span class="number">-1</span>&amp;&amp;num3[i]==<span class="number">0</span>)</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;num3[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-          
+          <p>当两个比较大的整数相乘时，可能会出现数据溢出的情形。为避免溢出，可以采用字符串的方法来实现两个大数之间的乘法。具体来说，首先以字符串的形式输入两个整数，每个整数的长度不会超过8位，然后把它们相乘的结果存储在另一个字符串当中（长度不会超过16位），最后把这个字符串打印出来。例如，假设用户输入为：62773417和12345678，则输出结果为：774980393241726.<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/08/解题报告-算法提高-P1001/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
